@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the benefits of the German Abitur and German International Abitur (DIA) for students and parents at German international schools in Asia. University access, careers, and personal growth.">
+  <title>Abitur | DIA • German International Education in Asia</title>
+  
+  <!-- Tailwind CSS via CDN - perfect for a clean first project -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    /* Custom styles for a polished, professional education look */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
+    
+    :root {
+      --abitur-blue: #1e3a8a;
+      --abitur-green: #059669;
+    }
+    
+    body {
+      font-family: 'Inter', system_ui, sans-serif;
+    }
+    
+    .heading-serif {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .nav-link {
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+    
+    .nav-link:hover {
+      color: #1e3a8a;
+    }
+
+    .section-heading {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .section-heading:after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 48px;
+      height: 3px;
+      background: linear-gradient(to right, #059669, #1e3a8a);
+      border-radius: 3px;
+    }
+
+    .benefit-card, .stat-card, .testimonial-card {
+      transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+                  box-shadow 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+    
+    .benefit-card:hover, .testimonial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    }
+
+    .stat-number {
+      font-variant-numeric: tabular-nums;
+    }
+
+    .language-btn {
+      transition: all 0.2s ease;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      line-height: 1;
+    }
+    
+    .language-btn.active {
+      background-color: #1e3a8a;
+      color: white;
+      box-shadow: 0 1px 3px rgba(30, 58, 138, 0.3);
+      font-weight: 700;
+    }
+
+    .nav-active {
+      color: #1e3a8a;
+      font-weight: 600;
+    }
+
+    .modern-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 15px -3px rgb(15 23 42 / 0.05), 0 4px 6px -4px rgb(15 23 42 / 0.05);
+    }
+
+    .hero-gradient {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #059669 100%);
+    }
+
+    .trust-badge {
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+    }
+
+    .abitur-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, #e2e8f0, transparent);
+    }
+
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
+
+    .mobile-menu {
+      animation: slideDown 0.3s ease forwards;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .data-i18n {
+      /* Helps identify translatable content during development */
+    }
+  </style>
+</head>
+<body class="smooth-scroll bg-slate-50 text-slate-800 antialiased">
+  <!-- NAVBAR -->
+  <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo / Brand -->
+        <div class="flex items-center gap-x-3">
+          <div class="flex items-center gap-x-2">
+            <!-- Official ZfA logo -->
+            <a href="https://www.auslandsschulwesen.de/" target="_blank" rel="noopener" title="Visit official ZfA website">
+              <img src="assets/images/zfa-deutsche-auslandsschularbeit-international-300x300-1.png.webp" 
+                   data-i18n-alt="logo.zfa"
+                   alt="ZfA - Zentralstelle für das Auslandsschulwesen" 
+                   class="h-9 w-auto object-contain rounded ring-1 ring-slate-200 bg-white p-0.5 hover:opacity-90 transition">
+            </a>
+            <!-- German flag (official colors) -->
+            <svg width="22" height="14" viewBox="0 0 3 2" class="rounded shadow-sm ring-1 ring-slate-200" aria-label="German flag">
+              <rect width="3" height="2" fill="#000000"/>
+              <rect y="0.6667" width="3" height="0.6667" fill="#DD0000"/>
+              <rect y="1.3333" width="3" height="0.6667" fill="#FFCC00"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-semibold text-2xl tracking-tight text-[#1e3a8a]">Abitur</div>
+            <div class="text-[10px] text-slate-500 -mt-1 font-medium tracking-[1.5px]">DIA • DEUTSCHE AUSLANDSSCHULEN</div>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+          <a href="#students" class="nav-link text-slate-700 hover:text-[#1e3a8a]" data-i18n="nav.students">For Students</a>
+          <a href="#parents" class="nav-link text-slate-700 hover:text-[#1e3a8a]" data-i18n="nav.parents">For Parents</a>
+          <a href="#why-today" class="nav-link text-slate-700 hover:text-[#1e3a8a]" data-i18n="nav.why">Why Abitur Today</a>
+          <a href="#schools-asia" class="nav-link text-slate-700 hover:text-[#1e3a8a]" data-i18n="nav.schools">Schools in Asia</a>
+          <a href="#contact" class="nav-link text-slate-700 hover:text-[#1e3a8a]" data-i18n="nav.contact">Contact</a>
+        </div>
+
+        <!-- Language Switcher + Mobile Menu Button -->
+        <div class="flex items-center gap-x-3">
+          <!-- Language Switcher -->
+          <div class="flex items-center bg-slate-100 rounded-full p-1 shadow-inner">
+            <button 
+              onclick="setLanguage('en')" 
+              id="lang-en"
+              class="language-btn px-3 py-1 text-xs rounded-full text-slate-700 hover:bg-white/70"
+              aria-label="Switch to English">
+              EN
+            </button>
+            <button 
+              onclick="setLanguage('de')" 
+              id="lang-de"
+              class="language-btn px-3 py-1 text-xs rounded-full text-slate-700 hover:bg-white/70"
+              aria-label="Auf Deutsch wechseln">
+              DE
+            </button>
+            <button 
+              onclick="setLanguage('ko')" 
+              id="lang-ko"
+              class="language-btn px-3 py-1 text-xs rounded-full text-slate-700 hover:bg-white/70"
+              aria-label="한국어로 전환">
+              KO
+            </button>
+          </div>
+
+          <!-- Hamburger (mobile only) -->
+          <button 
+            id="mobile-menu-btn"
+            class="md:hidden w-10 h-10 flex items-center justify-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-xl transition"
+            aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
+      <div class="px-6 py-6 flex flex-col gap-y-4 text-base font-medium">
+        <a href="#students" class="py-1 text-slate-700" data-i18n="nav.students">For Students</a>
+        <a href="#parents" class="py-1 text-slate-700" data-i18n="nav.parents">For Parents</a>
+        <a href="#why-today" class="py-1 text-slate-700" data-i18n="nav.why">Why Abitur Today</a>
+        <a href="#schools-asia" class="py-1 text-slate-700" data-i18n="nav.schools">Schools in Asia</a>
+        <a href="#contact" class="py-1 text-slate-700" data-i18n="nav.contact">Contact</a>
+        
+        <div class="pt-3 border-t flex items-center gap-x-2">
+          <button onclick="setLanguage('en'); closeMobileMenu()" class="flex-1 py-2 text-sm rounded-xl border border-slate-200" id="mobile-lang-en" aria-label="English">EN</button>
+          <button onclick="setLanguage('de'); closeMobileMenu()" class="flex-1 py-2 text-sm rounded-xl border border-slate-200" id="mobile-lang-de" aria-label="Deutsch">DE</button>
+          <button onclick="setLanguage('ko'); closeMobileMenu()" class="flex-1 py-2 text-sm rounded-xl border border-slate-200" id="mobile-lang-ko" aria-label="한국어">KO</button>
+        </div>
+      </div>
+    </div>
+    <!-- Subtle German tricolor accent bar -->
+    <div class="h-[3px] w-full flex">
+      <div class="flex-1 bg-black"></div>
+      <div class="flex-1 bg-[#DD0000]"></div>
+      <div class="flex-1 bg-[#FFCC00]"></div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-gradient text-white">
+    <div class="max-w-7xl mx-auto px-6 pt-16 pb-20 md:pt-20 md:pb-24">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <!-- Text content -->
+        <div>
+          <!-- Trust badge -->
+          <div class="inline-flex items-center gap-x-2 trust-badge text-[#1e3a8a] text-xs font-semibold tracking-widest px-4 py-1.5 rounded-2xl mb-6 shadow">
+            <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+            <span data-i18n="hero.badge">FOR GERMAN INTERNATIONAL SCHOOLS IN ASIA</span>
+          </div>
+
+          <h1 class="text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tighter font-semibold heading-serif">
+            <span data-i18n="hero.title">Your gateway to the world.</span><br>
+            <span class="text-white/90" data-i18n="hero.title2">The German Abitur.</span>
+          </h1>
+          
+          <p class="mt-6 max-w-2xl text-xl md:text-2xl text-white/90 leading-tight" data-i18n="hero.subtitle">
+            A modern, rigorous education that opens doors to top universities worldwide — and gives you a powerful advantage in Asia and Europe.
+          </p>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="#students" 
+               class="inline-flex justify-center items-center gap-x-2 bg-white text-[#1e3a8a] hover:bg-slate-100 transition font-semibold px-8 py-3.5 rounded-2xl shadow-lg text-base">
+              <span data-i18n="hero.cta.students">For Students</span>
+            </a>
+            <a href="#parents" 
+               class="inline-flex justify-center items-center gap-x-2 bg-white/10 hover:bg-white/20 backdrop-blur border border-white/40 text-white font-semibold px-8 py-3.5 rounded-2xl transition text-base">
+              <span data-i18n="hero.cta.parents">For Parents</span>
+            </a>
+            <button onclick="downloadBrochure()"
+               class="inline-flex justify-center items-center gap-x-2 border border-white/50 hover:bg-white/10 text-white font-medium px-6 py-3.5 rounded-2xl transition text-base">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v-4m0 0l4 4m-4-4l4-4m12 4v4m0 0l-4-4m4 4l-4-4" />
+              </svg>
+              <span data-i18n="hero.cta.download">Download Info</span>
+            </button>
+          </div>
+
+          <div class="mt-8 text-xs text-white/70 flex items-center gap-x-2">
+            <span data-i18n="hero.trust">Trusted by families at over 140 German schools worldwide</span>
+          </div>
+        </div>
+
+        <!-- Hero photo -->
+        <div class="hidden md:block">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/20">
+            <img src="assets/images/students-classroom.jpg" alt="Diverse happy students learning together at a German international school in Asia" class="w-full aspect-[16/10] object-cover">
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent h-1/3"></div>
+            <div class="absolute bottom-4 left-4 text-white text-xs font-medium tracking-wider">German International School • Asia</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- WHAT IS THE ABITUR / DIA -->
+  <section class="max-w-5xl mx-auto px-6 pt-16 pb-12">
+    <div class="text-center mb-10">
+      <div class="uppercase tracking-[2px] text-xs font-semibold text-emerald-700 mb-2" data-i18n="what.badge">THE FOUNDATION OF YOUR FUTURE</div>
+      <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-slate-900 heading-serif" data-i18n="what.title">What is the German Abitur?</h2>
+    </div>
+
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-xl text-slate-600 leading-relaxed" data-i18n="what.intro">
+        The Abitur (officially "Zeugnis der Allgemeinen Hochschulreife") is Germany's highest school-leaving certificate. It qualifies you for university studies in Germany and is recognized by universities around the world.
+      </p>
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+      <!-- Regular Abitur -->
+      <div class="modern-card p-8 border border-slate-100">
+        <div class="font-semibold text-lg flex items-center gap-x-2 mb-3">
+          <span class="text-emerald-600">🇩🇪</span> 
+          <span data-i18n="what.regular.title">The Classic Abitur</span>
+        </div>
+        <p class="text-slate-600 leading-relaxed text-[15px]" data-i18n="what.regular.desc">
+          Completed in Germany. Extremely rigorous academic preparation across languages, sciences, mathematics, history and more. Direct entry to any German university.
+        </p>
+      </div>
+
+      <!-- DIA -->
+      <div class="modern-card p-8 border border-emerald-100 bg-emerald-50/30">
+        <div class="font-semibold text-lg flex items-center gap-x-2 mb-3">
+          <span class="text-[#1e3a8a]">🌍</span> 
+          <span data-i18n="what.dia.title">The German International Abitur (DIA)</span>
+        </div>
+        <p class="text-slate-600 leading-relaxed text-[15px]" data-i18n="what.dia.desc">
+          Specially designed for German schools abroad. Combines the strength of the German curriculum with bilingual teaching (German + English and often the host language). You receive the same university access rights in Germany plus excellent international recognition — often together with a local high school diploma.
+        </p>
+        <div class="mt-4 text-xs font-medium text-emerald-700" data-i18n="what.dia.badge">THE BEST OF BOTH WORLDS</div>
+      </div>
+    </div>
+
+    <!-- IB Diploma Comparison -->
+    <div class="mt-14 max-w-5xl mx-auto border-t border-slate-100 pt-10">
+      <div class="text-center mb-6">
+        <div class="inline-block px-3 py-1 text-xs font-semibold tracking-[1.5px] bg-amber-100 text-amber-800 rounded-full" data-i18n="ib.badge">A COMMON QUESTION FROM FAMILIES</div>
+      </div>
+      <h3 class="text-2xl md:text-3xl font-semibold tracking-tight text-center mb-3 heading-serif" data-i18n="ib.title">Abitur / DIA compared with the IB Diploma</h3>
+      <p class="max-w-2xl mx-auto text-center text-slate-600 mb-8" data-i18n="ib.intro">Both the German International Abitur (DIA) and the International Baccalaureate (IB) are world-class qualifications offered at many international schools. Here is a transparent comparison, especially for families connected to Germany or planning university studies there.</p>
+
+      <div class="overflow-x-auto -mx-1">
+        <table class="w-full min-w-[700px] text-sm border border-slate-200 rounded-2xl overflow-hidden bg-white">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="text-left p-4 font-semibold text-slate-700 w-44" data-i18n="ib.table.aspect">Aspect</th>
+              <th class="text-left p-4 font-semibold text-[#1e3a8a]" data-i18n="ib.table.abitur">German Abitur / DIA</th>
+              <th class="text-left p-4 font-semibold text-slate-600" data-i18n="ib.table.ib">IB Diploma</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y text-slate-600">
+            <tr>
+              <td class="p-4 font-medium text-slate-800" data-i18n="ib.row1.aspect">University access in Germany</td>
+              <td class="p-4" data-i18n="ib.row1.abitur">Direct entry with full Hochschulreife. Equivalent to a German Abitur. No Studienkolleg required for almost all programs.</td>
+              <td class="p-4" data-i18n="ib.row1.ib">Widely recognized but subject to individual university evaluation. Some programs or states may require higher points or additional assessments.</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium text-slate-800" data-i18n="ib.row2.aspect">German language &amp; career advantage</td>
+              <td class="p-4" data-i18n="ib.row2.abitur">Core strength: high-level German + English (often host language too). Huge advantage for German companies and studying/living in Germany, Austria or Switzerland.</td>
+              <td class="p-4" data-i18n="ib.row2.ib">Excellent English-medium education with a second language. German is offered at some schools but not a central pillar of the qualification.</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium text-slate-800" data-i18n="ib.row3.aspect">Cost of higher education in Germany</td>
+              <td class="p-4" data-i18n="ib.row3.abitur">Public university semester fees are typically only €100–400 (often includes public transport). Abitur/DIA holders are generally treated as domestic students.</td>
+              <td class="p-4" data-i18n="ib.row3.ib">Base fees are the same, but in Baden-Württemberg non-EU students with IB may pay €1,500 per semester tuition (exceptions apply for some groups).</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium text-slate-800" data-i18n="ib.row4.aspect">Curriculum &amp; assessment</td>
+              <td class="p-4" data-i18n="ib.row4.abitur">Deep specialization in 3–5 subjects with final written and oral Abitur examinations. Strong focus on independent work, structured writing and oral presentation.</td>
+              <td class="p-4" data-i18n="ib.row4.ib">Six subjects from different groups + core elements (Theory of Knowledge, Extended Essay, Creativity-Activity-Service). More breadth + holistic components.</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium text-slate-800" data-i18n="ib.row5.aspect">Best for families who value...</td>
+              <td class="p-4" data-i18n="ib.row5.abitur">Direct, low-cost access to Germany’s excellent public universities, German-language fluency, and careers with German/European companies in Asia and Europe.</td>
+              <td class="p-4" data-i18n="ib.row5.ib">Maximum subject flexibility and a very broad, inquiry-based international education for universities worldwide (especially English-speaking).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-3 text-xs text-center text-slate-500" data-i18n="ib.note">Both qualifications open excellent doors. The Abitur/DIA is particularly powerful when Germany, German language skills, or cost-effective high-quality university education in Europe are priorities for your family.</p>
+    </div>
+  </section>
+
+  <!-- FOR STUDENTS -->
+  <section id="students" class="bg-white py-16 border-t border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-y-4 mb-10">
+        <div>
+          <div class="uppercase text-emerald-700 text-xs tracking-[2px] font-semibold mb-1" data-i18n="students.badge">FOR STUDENTS AGES 14–19</div>
+          <h2 class="text-4xl md:text-5xl font-semibold tracking-tighter heading-serif" data-i18n="students.title">Why the Abitur will change your life</h2>
+        </div>
+        <a href="#contact" class="hidden md:inline text-sm font-medium text-emerald-700 hover:text-emerald-800 flex items-center gap-x-1">
+          <span data-i18n="students.talk">Talk to your school counselor →</span>
+        </a>
+      </div>
+
+      <!-- Student Benefits Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="benefit-card modern-card p-7 border border-slate-100">
+          <div class="w-11 h-11 rounded-2xl bg-blue-100 text-[#1e3a8a] flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 4.01V8" /></svg>
+          </div>
+          <h3 class="font-semibold text-xl tracking-tight mb-2" data-i18n="students.benefit1.title">Worldwide University Access</h3>
+          <p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="students.benefit1.desc">Your Abitur or DIA is recognized for direct entry at German universities (including the world’s top technical universities) as well as excellent institutions across Europe, North America, the UK, Australia, and Asia. No foundation year required in most cases.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="benefit-card modern-card p-7 border border-slate-100">
+          <div class="w-11 h-11 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+          </div>
+          <h3 class="font-semibold text-xl tracking-tight mb-2" data-i18n="students.benefit2.title">Career Advantage in Asia &amp; Germany</h3>
+          <p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="students.benefit2.desc">Germany is one of the world’s strongest economies. Thousands of German companies (Siemens, BMW, Bosch, SAP, BASF, Volkswagen and many more) are expanding rapidly across Asia. Bilingual graduates with an Abitur/DIA are highly sought after for roles in engineering, business, logistics, tech, and consulting.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="benefit-card modern-card p-7 border border-slate-100">
+          <div class="w-11 h-11 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17l2.79-3.368L18 17l-2.79-3.368L18 10.5l-2.79 3.368L9.663 7 12 13.5 9.663 17z" /></svg>
+          </div>
+          <h3 class="font-semibold text-xl tracking-tight mb-2" data-i18n="students.benefit3.title">Critical Thinking &amp; Depth</h3>
+          <p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="students.benefit3.desc">The Abitur is known for its academic rigor. You learn how to analyze deeply, write structured arguments, conduct independent research, and defend your ideas orally. These skills are prized at every top university and in leadership roles later in life.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="benefit-card modern-card p-7 border border-slate-100">
+          <div class="w-11 h-11 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.02 18.02 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+          </div>
+          <h3 class="font-semibold text-xl tracking-tight mb-2" data-i18n="students.benefit4.title">True Language Mastery</h3>
+          <p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="students.benefit4.desc">You become fluent in German (the language of Europe’s largest economy) and English, while living and learning in Asia. This combination is rare and extremely valuable for international careers and cultural fluency.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="benefit-card modern-card p-7 border border-slate-100">
+          <div class="w-11 h-11 rounded-2xl bg-violet-100 text-violet-700 flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 01-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+          </div>
+          <h3 class="font-semibold text-xl tracking-tight mb-2" data-i18n="students.benefit5.title">Personal Growth &amp; Global Perspective</h3>
+          <p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="students.benefit5.desc">Living between cultures while following a structured, values-driven German curriculum helps you become independent, resilient, open-minded, and confident. You learn to see the world from multiple perspectives.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="benefit-card modern-card p-7 border border-slate-100">
+          <div class="w-11 h-11 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z" /></svg>
+          </div>
+          <h3 class="font-semibold text-xl tracking-tight mb-2" data-i18n="students.benefit6.title">A Global Network for Life</h3>
+          <p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="students.benefit6.desc">Join a network of 140+ German international schools and thousands of alumni across continents. Many graduates stay connected through the PASCH initiative and university programs in Germany.</p>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center">
+        <a href="#contact" class="inline-flex items-center text-sm font-medium text-emerald-700 hover:underline" data-i18n="students.bottomcta">Ready to explore? Talk to your school →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR PARENTS -->
+  <section id="parents" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="mb-10">
+      <div class="uppercase text-[#1e3a8a] text-xs tracking-[2px] font-semibold mb-1" data-i18n="parents.badge">FOR PARENTS &amp; FAMILIES</div>
+      <h2 class="text-4xl md:text-5xl font-semibold tracking-tighter heading-serif" data-i18n="parents.title">A smart, future-proof investment</h2>
+      <p class="mt-3 max-w-2xl text-lg text-slate-600" data-i18n="parents.intro">Choosing the Abitur path through a German international school gives your child outstanding preparation while protecting your family from the enormous costs of many other international education routes.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="benefit-card modern-card p-7">
+        <h3 class="font-semibold text-xl mb-3" data-i18n="parents.benefit1.title">Exceptional Long-Term Value</h3>
+        <p class="text-slate-600" data-i18n="parents.benefit1.desc">Public universities in Germany charge little or no tuition — even for international students with an Abitur/DIA. Typical semester fees are only €100–€400 (often including a public transport ticket). Compare that to $30,000–$60,000+ per year elsewhere. Your child can attend world-class universities at a fraction of the cost.</p>
+      </div>
+      <div class="benefit-card modern-card p-7">
+        <h3 class="font-semibold text-xl mb-3" data-i18n="parents.benefit2.title">Well-Rounded, High-Quality Education</h3>
+        <p class="text-slate-600" data-i18n="parents.benefit2.desc">The German curriculum emphasizes depth over breadth. Students study languages, sciences, mathematics, history, literature, and the arts at a high level. They graduate with strong character, discipline, and a genuine love of learning.</p>
+      </div>
+      <div class="benefit-card modern-card p-7">
+        <h3 class="font-semibold text-xl mb-3" data-i18n="parents.benefit3.title">Strong Community &amp; Cultural Bridge</h3>
+        <p class="text-slate-600" data-i18n="parents.benefit3.desc">German international schools bring together German expat families, local families who value German education, and international families. Your child grows up bilingual and bicultural — comfortable in both Asia and Europe. This is a true cultural bridge that lasts a lifetime.</p>
+      </div>
+      <div class="benefit-card modern-card p-7">
+        <h3 class="font-semibold text-xl mb-3" data-i18n="parents.benefit4.title">Preparation for Top Universities</h3>
+        <p class="text-slate-600" data-i18n="parents.benefit4.desc">Graduates regularly gain places at elite institutions: TU Munich, LMU Munich, Heidelberg, ETH Zurich, Imperial College, Oxford, top US and Asian universities. The combination of rigorous academics + international experience is extremely attractive to admissions teams.</p>
+      </div>
+      <div class="benefit-card modern-card p-7">
+        <h3 class="font-semibold text-xl mb-3" data-i18n="parents.benefit5.title">Future-Ready Skills for a Changing World</h3>
+        <p class="text-slate-600" data-i18n="parents.benefit5.desc">In today’s Asia, German companies are major investors and employers. A graduate who speaks German, understands German business culture, and holds a respected German qualification has a significant head start in careers across manufacturing, technology, automotive, pharmaceuticals, consulting, and logistics.</p>
+      </div>
+      <div class="benefit-card modern-card p-7 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+        <h3 class="font-semibold text-xl mb-3 text-white" data-i18n="parents.benefit6.title">Peace of Mind</h3>
+        <p class="text-white/80" data-i18n="parents.benefit6.desc">You are giving your child one of the world’s most respected secondary qualifications while they remain in a familiar, high-quality school environment close to home. It is education with both excellence and security.</p>
+        <div class="mt-5 text-xs uppercase tracking-widest text-emerald-400" data-i18n="parents.benefit6.badge">A DECISION YOU WON’T REGRET</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY ABITUR TODAY (relevance in Asia) -->
+  <section id="why-today" class="bg-[#1e3a8a] py-16 text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-12 gap-x-12 gap-y-10 items-center">
+        <div class="lg:col-span-5">
+          <div class="uppercase tracking-[3px] text-xs text-white/70 mb-2" data-i18n="why.badge">RELEVANT NOW MORE THAN EVER</div>
+          <h2 class="text-4xl md:text-5xl font-semibold tracking-tighter heading-serif leading-none" data-i18n="why.title">Why the Abitur matters in Asia today</h2>
+          <p class="mt-4 text-white/80 text-lg" data-i18n="why.intro">Asia and Germany are growing closer economically and culturally. The young people who can move confidently between both worlds will have the greatest opportunities.</p>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-6 border border-white/10">
+              <div class="text-4xl font-semibold tabular-nums tracking-tighter" data-i18n="why.stat1.number">140+</div>
+              <div class="font-medium mt-1" data-i18n="why.stat1.label">German Schools Abroad worldwide offering the Abitur or DIA</div>
+              <div class="text-xs mt-4 text-white/70" data-i18n="why.stat1.source">Source: Zentralstelle für das Auslandsschulwesen (ZfA)</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-6 border border-white/10">
+              <div class="text-4xl font-semibold tabular-nums tracking-tighter" data-i18n="why.stat2.number">1,700+</div>
+              <div class="font-medium mt-1" data-i18n="why.stat2.label">German companies active in India alone — many more across China, SE Asia &amp; beyond</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-6 border border-white/10">
+              <div class="text-4xl font-semibold tabular-nums tracking-tighter" data-i18n="why.stat3.number">€0–400</div>
+              <div class="font-medium mt-1" data-i18n="why.stat3.label">Typical semester contribution at German public universities (often includes public transport)</div>
+              <div class="text-xs mt-4 text-white/70" data-i18n="why.stat3.note">Huge savings compared to most English-speaking countries</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-6 border border-white/10">
+              <div class="text-4xl font-semibold tracking-tight" data-i18n="why.stat4.number">Direct entry</div>
+              <div class="font-medium mt-1" data-i18n="why.stat4.label">to almost all German public universities and strong recognition globally</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GERMAN SCHOOLS IN ASIA -->
+  <section id="schools-asia" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="mb-8">
+      <div class="text-emerald-700 text-xs tracking-[2px] font-semibold mb-1" data-i18n="schools.badge">A GROWING NETWORK ACROSS THE REGION</div>
+      <h2 class="text-4xl md:text-5xl font-semibold tracking-tight heading-serif" data-i18n="schools.title">German International Schools in Asia</h2>
+      <p class="max-w-2xl mt-3 text-lg text-slate-600" data-i18n="schools.intro">Deutsche Auslandsschulen (German Schools Abroad) following German curriculum standards and offering the Abitur or DIA exist in many major Asian cities.</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 text-sm">
+      <div class="bg-white border border-slate-200 rounded-2xl px-5 py-4 font-medium">China — Shanghai, Beijing &amp; more</div>
+      <div class="bg-white border border-slate-200 rounded-2xl px-5 py-4 font-medium">India — New Delhi, Bangalore &amp; partner schools</div>
+      <div class="bg-white border border-slate-200 rounded-2xl px-5 py-4 font-medium">Japan — Tokyo / Yokohama region</div>
+      <div class="bg-white border border-slate-200 rounded-2xl px-5 py-4 font-medium">South Korea — Seoul</div>
+      <div class="bg-white border border-slate-200 rounded-2xl px-5 py-4 font-medium">Thailand — Bangkok &amp; Chiang Mai</div>
+      <div class="bg-white border border-slate-200 rounded-2xl px-5 py-4 font-medium">Vietnam — Ho Chi Minh City &amp; Hanoi</div>
+      <div class="bg-white border border-slate-200 rounded-2xl px-5 py-4 font-medium">Indonesia — Jakarta</div>
+      <div class="bg-white border border-slate-200 rounded-2xl px-5 py-4 font-medium">Singapore &amp; other hubs</div>
+    </div>
+
+    <!-- Student life photos in Asian German schools -->
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-200">
+        <img src="assets/images/students-classroom.jpg" alt="Happy diverse students in a bright classroom at a German international school in Asia" class="w-full h-44 object-cover">
+        <div class="px-4 py-2 text-xs text-slate-600 bg-white">Engaged learning in bilingual classrooms</div>
+      </div>
+      <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-200">
+        <img src="assets/images/campus-life.jpg" alt="Diverse students enjoying campus life at a German Auslandsschule in Asia" class="w-full h-44 object-cover">
+        <div class="px-4 py-2 text-xs text-slate-600 bg-white">Campus life across Asia</div>
+      </div>
+      <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-200">
+        <img src="assets/images/graduation-celebration.jpg" alt="Proud graduates celebrating at a German international school in Asia" class="w-full h-44 object-cover">
+        <div class="px-4 py-2 text-xs text-slate-600 bg-white">Graduation – ready for the world</div>
+      </div>
+    </div>
+
+    <div class="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-slate-500">
+      <span data-i18n="schools.official.prefix">Official schools of the</span>
+      <div class="flex items-center gap-x-3">
+        <img src="assets/images/zfa-deutsche-auslandsschularbeit-international-300x300-1.png.webp" 
+             data-i18n-alt="logo.zfa" alt="ZfA Logo" class="h-6 w-auto object-contain">
+        <img src="assets/images/schulen-partner-der-zukunft-300x300-1.png.webp" 
+             data-i18n-alt="logo.pasch" alt="PASCH - Schulen: Partner der Zukunft" class="h-6 w-auto object-contain">
+      </div>
+      <span class="font-semibold text-[#1e3a8a]" data-i18n="schools.official.zfa">ZfA – Zentralstelle für das Auslandsschulwesen</span>
+    </div>
+
+    <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+      <a href="https://www.auslandsschulwesen.de/" target="_blank" rel="noopener" 
+         class="inline-flex items-center gap-x-2 text-sm font-semibold px-5 py-3 rounded-2xl bg-[#1e3a8a] text-white hover:bg-[#162d6e] transition">
+        <span data-i18n="schools.map">Find your nearest school on the official ZfA world map</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+      <span class="text-xs text-slate-500" data-i18n="schools.note">~140 German schools worldwide supported by the Zentralstelle für das Auslandsschulwesen (ZfA) and part of the PASCH network.</span>
+    </div>
+  </section>
+
+  <!-- KEY FACTS / STATS BAND -->
+  <section class="border-t border-b border-slate-200 bg-white py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8">
+        <div class="text-center border-r border-slate-100 last:border-r-0">
+          <div class="text-4xl font-semibold text-[#1e3a8a] tabular-nums" data-i18n="facts.stat1.number">140+</div>
+          <div class="text-xs font-semibold tracking-widest text-slate-500 mt-1" data-i18n="facts.stat1.label">GERMAN SCHOOLS ABROAD</div>
+        </div>
+        <div class="text-center border-r border-slate-100 last:border-r-0">
+          <div class="text-4xl font-semibold text-[#1e3a8a] tabular-nums" data-i18n="facts.stat2.number">Direct</div>
+          <div class="text-xs font-semibold tracking-widest text-slate-500 mt-1" data-i18n="facts.stat2.label">UNIVERSITY ACCESS IN GERMANY</div>
+        </div>
+        <div class="text-center border-r border-slate-100 last:border-r-0">
+          <div class="text-4xl font-semibold text-[#1e3a8a] tabular-nums" data-i18n="facts.stat3.number">Low Cost</div>
+          <div class="text-xs font-semibold tracking-widest text-slate-500 mt-1" data-i18n="facts.stat3.label">HIGHER EDUCATION IN GERMANY</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-semibold text-[#1e3a8a] tabular-nums" data-i18n="facts.stat4.number">Global</div>
+          <div class="text-xs font-semibold tracking-widest text-slate-500 mt-1" data-i18n="facts.stat4.label">RECOGNITION &amp; OPPORTUNITIES</div>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <p class="text-xs text-slate-500 max-w-md mx-auto" data-i18n="facts.disclaimer">All information is for guidance only. Please verify current details with the ZfA, your school, and official university admissions offices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <div class="mb-8 flex items-center justify-between">
+      <div>
+        <div class="uppercase text-xs tracking-[2px] text-emerald-700 font-semibold" data-i18n="testimonials.badge">REAL STORIES FROM OUR COMMUNITY</div>
+        <h2 class="text-3xl font-semibold tracking-tight" data-i18n="testimonials.title">What students and parents say</h2>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card modern-card p-7 border border-slate-100">
+        <div class="flex gap-x-1 text-emerald-600 mb-4">
+          ★★★★☆
+        </div>
+        <blockquote class="text-[15px] leading-relaxed text-slate-700" data-i18n="testimonials.1.quote">
+          “The DIA gave me direct admission to TU Munich for engineering. Studying in both German and English at school made the transition to university in Germany surprisingly smooth. I now work in Singapore for a German automotive supplier — my language skills were the deciding factor.”
+        </blockquote>
+        <div class="mt-6 flex items-center gap-x-3">
+          <img src="assets/images/science-class.jpg" alt="Liam T. - Graduate from German International School Shanghai" class="w-9 h-9 rounded-full object-cover flex-shrink-0 border border-white shadow-sm ring-1 ring-slate-200">
+          <div class="text-sm">
+            <div class="font-medium" data-i18n="testimonials.1.name">Liam T., Class of 2022</div>
+            <div class="text-slate-500 text-xs" data-i18n="testimonials.1.role">German International School Shanghai → TU Munich → Siemens Asia</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card modern-card p-7 border border-slate-100">
+        <div class="flex gap-x-1 text-emerald-600 mb-4">
+          ★★★★★
+        </div>
+        <blockquote class="text-[15px] leading-relaxed text-slate-700" data-i18n="testimonials.2.quote">
+          “As parents we were worried about the cost of university. With the Abitur our daughter was accepted at three excellent German universities with almost no tuition fees. The education she received in Jakarta was outstanding — rigorous but caring. Best decision we ever made.”
+        </blockquote>
+        <div class="mt-6 flex items-center gap-x-3">
+          <img src="assets/images/campus-life.jpg" alt="Parents from Deutsche Schule Jakarta" class="w-9 h-9 rounded-full object-cover flex-shrink-0 border border-white shadow-sm ring-1 ring-slate-200">
+          <div class="text-sm">
+            <div class="font-medium" data-i18n="testimonials.2.name">Mr. &amp; Mrs. Patel</div>
+            <div class="text-slate-500 text-xs" data-i18n="testimonials.2.role">Parents of Anika (Class of 2023), Deutsche Schule Jakarta</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card modern-card p-7 border border-slate-100">
+        <div class="flex gap-x-1 text-emerald-600 mb-4">
+          ★★★★★
+        </div>
+        <blockquote class="text-[15px] leading-relaxed text-slate-700" data-i18n="testimonials.3.quote">
+          “I didn’t realize how valuable German would be. I’m now doing a dual degree in business and German at a top university in Europe while interning with a logistics company that has huge operations in Southeast Asia. The Abitur network helped me find opportunities I never imagined.”
+        </blockquote>
+        <div class="mt-6 flex items-center gap-x-3">
+          <img src="assets/images/students-classroom.jpg" alt="Sofia K. - Student at German European School Singapore" class="w-9 h-9 rounded-full object-cover flex-shrink-0 border border-white shadow-sm ring-1 ring-slate-200">
+          <div class="text-sm">
+            <div class="font-medium" data-i18n="testimonials.3.name">Sofia K., Grade 12</div>
+            <div class="text-slate-500 text-xs" data-i18n="testimonials.3.role">German European School Singapore</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <p class="text-center text-xs mt-8 text-slate-500" data-i18n="testimonials.note">These are example stories. We encourage schools to replace them with authentic quotes from your own students and families.</p>
+  </section>
+
+  <!-- FINAL CTA BAND -->
+  <section class="bg-gradient-to-r from-emerald-700 to-[#1e3a8a] py-14 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-semibold tracking-tight" data-i18n="cta.title">Ready to take the next step?</h2>
+      <p class="mt-3 text-white/80 max-w-md mx-auto" data-i18n="cta.subtitle">Whether you are a student curious about your options or a parent exploring the best path for your family — we’re here to help.</p>
+      
+      <div class="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+        <a href="#contact" class="px-8 py-3.5 bg-white text-emerald-800 hover:bg-white/90 font-semibold rounded-2xl transition inline-flex items-center justify-center" data-i18n="cta.talk">Talk to your school</a>
+        
+        <button onclick="downloadBrochure()" 
+                class="px-8 py-3.5 border border-white/60 hover:bg-white/10 font-medium rounded-2xl transition inline-flex items-center justify-center gap-x-2" data-i18n="cta.download">
+          Download Information Pack
+        </button>
+        
+        <a href="#contact" class="px-8 py-3.5 border border-white/60 hover:bg-white/10 font-medium rounded-2xl transition" data-i18n="cta.contact">Contact us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-5xl mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-5 gap-x-10 gap-y-12">
+      <div class="md:col-span-2">
+        <div class="uppercase tracking-[2px] text-xs font-semibold text-emerald-700" data-i18n="contact.badge">LET'S TALK</div>
+        <h2 class="mt-2 text-4xl font-semibold tracking-tighter heading-serif" data-i18n="contact.title">Get in touch</h2>
+        <p class="mt-4 text-slate-600" data-i18n="contact.desc">Reach out to your school’s Abitur or university guidance counselor, or use the form to ask general questions. We are happy to connect you with the right people.</p>
+        
+        <div class="mt-8 space-y-2 text-sm">
+          <div><span class="font-medium">Official resource:</span> <a href="https://www.auslandsschulwesen.de/" target="_blank" class="text-emerald-700 hover:underline">auslandsschulwesen.de</a></div>
+          <div><span class="font-medium">University recognition:</span> <a href="https://anabin.kmk.org" target="_blank" class="text-emerald-700 hover:underline">anabin.kmk.org</a></div>
+          <div><span class="font-medium">Study in Germany:</span> <a href="https://www.study-in-germany.de" target="_blank" class="text-emerald-700 hover:underline">study-in-germany.de</a></div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="md:col-span-3">
+        <form id="contact-form" class="space-y-5" onsubmit="handleFormSubmit(event)">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-medium text-slate-600 mb-1.5" data-i18n="form.name">Your name</label>
+              <input type="text" id="name" required class="w-full rounded-2xl border border-slate-300 bg-white px-4 py-2.5 text-sm focus:outline-none focus:border-emerald-600" placeholder="Maria Chen">
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-600 mb-1.5" data-i18n="form.email">Email address</label>
+              <input type="email" id="email" required class="w-full rounded-2xl border border-slate-300 bg-white px-4 py-2.5 text-sm focus:outline-none focus:border-emerald-600" placeholder="you@family.com">
+            </div>
+          </div>
+          
+          <div>
+            <label class="block text-xs font-medium text-slate-600 mb-1.5" data-i18n="form.role">I am a</label>
+            <select id="role" class="w-full rounded-2xl border border-slate-300 bg-white px-4 py-2.5 text-sm focus:outline-none focus:border-emerald-600">
+              <option value="parent" data-i18n="form.role.parent">Parent / Guardian</option>
+              <option value="student" data-i18n="form.role.student">Student (14–19)</option>
+              <option value="teacher" data-i18n="form.role.teacher">Teacher or Counselor</option>
+              <option value="other" data-i18n="form.role.other">Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-slate-600 mb-1.5" data-i18n="form.school">Your school (optional)</label>
+            <input type="text" id="school" class="w-full rounded-2xl border border-slate-300 bg-white px-4 py-2.5 text-sm focus:outline-none focus:border-emerald-600" placeholder="e.g. Deutsche Schule Shanghai" data-i18n="form.school.placeholder">
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-slate-600 mb-1.5" data-i18n="form.message">Your message or question</label>
+            <textarea id="message" rows="4" required class="w-full rounded-3xl border border-slate-300 bg-white px-4 py-3 text-sm focus:outline-none focus:border-emerald-600" data-i18n="form.message.placeholder" placeholder="I would like to know more about the DIA and university applications in Germany..."></textarea>
+          </div>
+
+          <button type="submit" 
+                  class="w-full sm:w-auto px-10 py-3 bg-[#1e3a8a] hover:bg-[#162d6e] transition text-white font-semibold rounded-2xl text-sm">
+            <span data-i18n="form.submit">Send message</span>
+          </button>
+          
+          <p id="form-success" class="hidden text-sm text-emerald-700 font-medium" data-i18n="form.success">Thank you! Your message has been noted. In a real implementation this would be emailed to the school.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 text-sm">
+    <div class="max-w-7xl mx-auto px-6 pt-14 pb-10">
+      <div class="grid md:grid-cols-12 gap-y-12">
+        <div class="md:col-span-5">
+          <div class="flex items-center gap-x-3 mb-3">
+            <!-- German flag -->
+            <svg width="26" height="17" viewBox="0 0 3 2" class="rounded shadow-sm ring-1 ring-white/30 flex-shrink-0" aria-hidden="true">
+              <rect width="3" height="2" fill="#000000"/>
+              <rect y="0.6667" width="3" height="0.6667" fill="#DD0000"/>
+              <rect y="1.3333" width="3" height="0.6667" fill="#FFCC00"/>
+            </svg>
+            <div>
+              <span class="font-semibold text-white text-xl tracking-tighter">Abitur | DIA</span>
+              <div class="text-[10px] text-white/60 -mt-0.5">Deutsche Auslandsschulen • ZfA</div>
+            </div>
+          </div>
+
+          <!-- Official logos in footer -->
+          <div class="flex items-center gap-x-3 mb-4">
+            <img src="assets/images/zfa-deutsche-auslandsschularbeit-international-300x300-1.png.webp" 
+                 data-i18n-alt="logo.zfa" alt="ZfA - Zentralstelle für das Auslandsschulwesen" class="h-7 w-auto object-contain opacity-90">
+            <img src="assets/images/schulen-partner-der-zukunft-300x300-1.png.webp" 
+                 data-i18n-alt="logo.pasch" alt="PASCH Initiative - Schulen: Partner der Zukunft" class="h-7 w-auto object-contain opacity-90">
+            <img src="assets/images/kultusminister-konferenz-300x300-1.png.webp" 
+                 data-i18n-alt="logo.kmk" alt="Kultusministerkonferenz (KMK)" class="h-7 w-auto object-contain opacity-90">
+          </div>
+          <p class="max-w-xs text-slate-400" data-i18n="footer.tagline">A clear path to excellent universities and global opportunities — through German international education in Asia.</p>
+          <div class="mt-6 text-xs">© <span id="year"></span> • For informational purposes at German international schools</div>
+        </div>
+
+        <div class="md:col-span-3">
+          <div class="font-medium text-white mb-3 text-xs tracking-widest" data-i18n="footer.resources">OFFICIAL RESOURCES</div>
+          <div class="space-y-[7px] text-sm">
+            <a href="https://www.auslandsschulwesen.de/" target="_blank" class="block hover:text-white">ZfA – Deutsche Auslandsschulen</a>
+            <a href="https://www.pasch-net.de/" target="_blank" class="block hover:text-white">PASCH Initiative</a>
+            <a href="https://www.daad.de/en/" target="_blank" class="block hover:text-white">DAAD – Study in Germany</a>
+            <a href="https://anabin.kmk.org" target="_blank" class="block hover:text-white">anabin (Recognition Database)</a>
+          </div>
+        </div>
+
+        <div class="md:col-span-4">
+          <div class="font-medium text-white mb-3 text-xs tracking-widest" data-i18n="footer.quick">QUICK LINKS</div>
+          <div class="grid grid-cols-2 gap-y-1 text-sm">
+            <a href="#students" class="hover:text-white py-0.5" data-i18n="nav.students">For Students</a>
+            <a href="#parents" class="hover:text-white py-0.5" data-i18n="nav.parents">For Parents</a>
+            <a href="#why-today" class="hover:text-white py-0.5" data-i18n="nav.why">Why Abitur Today</a>
+            <a href="#schools-asia" class="hover:text-white py-0.5" data-i18n="nav.schools">Schools in Asia</a>
+            <a href="#contact" class="hover:text-white py-0.5" data-i18n="nav.contact">Contact</a>
+            <a href="https://www.auslandsschulwesen.de/DE/Schulnetz/DAS/Weltkarte/weltkarte_node.html" target="_blank" class="hover:text-white py-0.5">World Map of Schools</a>
+          </div>
+          <div class="mt-8 text-[11px] text-slate-500" data-i18n="footer.disclaimer">
+            This site is for guidance and inspiration. Always verify current admission requirements, fees, and recognition directly with universities and the ZfA.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Tailwind configuration - clean brand colors for a professional education feel
+    function initTailwind() {
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'abitur-blue': '#1e3a8a',
+              'abitur-green': '#059669',
+              'german-gold': '#FFCC00',
+              'german-red': '#DD0000'
+            }
+          }
+        }
+      };
+    }
+
+    // =====================================================
+    // TRILINGUAL TRANSLATIONS (English + German + Korean)
+    // Add new keys here when you add new translatable content.
+    // This is the single source of truth for all text.
+    // =====================================================
+    const translations = {
+      en: {
+        // NAV
+        "nav.students": "For Students",
+        "nav.parents": "For Parents",
+        "nav.why": "Why Abitur Today",
+        "nav.schools": "Schools in Asia",
+        "nav.contact": "Contact",
+
+        // HERO
+        "hero.badge": "FOR GERMAN INTERNATIONAL SCHOOLS IN ASIA",
+        "hero.title": "Your gateway to the world.",
+        "hero.title2": "The German Abitur.",
+        "hero.subtitle": "A modern, rigorous education that opens doors to top universities worldwide — and gives you a powerful advantage in Asia and Europe.",
+        "hero.cta.students": "For Students",
+        "hero.cta.parents": "For Parents",
+        "hero.cta.download": "Download Info",
+        "hero.trust": "Trusted by families at over 140 German schools worldwide",
+
+        // WHAT IS
+        "what.badge": "THE FOUNDATION OF YOUR FUTURE",
+        "what.title": "What is the German Abitur?",
+        "what.intro": "The Abitur (officially \"Zeugnis der Allgemeinen Hochschulreife\") is Germany's highest school-leaving certificate. It qualifies you for university studies in Germany and is recognized by universities around the world.",
+        "what.regular.title": "The Classic Abitur",
+        "what.regular.desc": "Completed in Germany. Extremely rigorous academic preparation across languages, sciences, mathematics, history and more. Direct entry to any German university.",
+        "what.dia.title": "The German International Abitur (DIA)",
+        "what.dia.desc": "Specially designed for German schools abroad. Combines the strength of the German curriculum with bilingual teaching (German + English and often the host language). You receive the same university access rights in Germany plus excellent international recognition — often together with a local high school diploma.",
+        "what.dia.badge": "THE BEST OF BOTH WORLDS",
+
+        // STUDENTS
+        "students.badge": "FOR STUDENTS AGES 14–19",
+        "students.title": "Why the Abitur will change your life",
+        "students.talk": "Talk to your school counselor →",
+        "students.benefit1.title": "Worldwide University Access",
+        "students.benefit1.desc": "Your Abitur or DIA is recognized for direct entry at German universities (including the world’s top technical universities) as well as excellent institutions across Europe, North America, the UK, Australia, and Asia. No foundation year required in most cases.",
+        "students.benefit2.title": "Career Advantage in Asia & Germany",
+        "students.benefit2.desc": "Germany is one of the world’s strongest economies. Thousands of German companies (Siemens, BMW, Bosch, SAP, BASF, Volkswagen and many more) are expanding rapidly across Asia. Bilingual graduates with an Abitur/DIA are highly sought after for roles in engineering, business, logistics, tech, and consulting.",
+        "students.benefit3.title": "Critical Thinking & Depth",
+        "students.benefit3.desc": "The Abitur is known for its academic rigor. You learn how to analyze deeply, write structured arguments, conduct independent research, and defend your ideas orally. These skills are prized at every top university and in leadership roles later in life.",
+        "students.benefit4.title": "True Language Mastery",
+        "students.benefit4.desc": "You become fluent in German (the language of Europe’s largest economy) and English, while living and learning in Asia. This combination is rare and extremely valuable for international careers and cultural fluency.",
+        "students.benefit5.title": "Personal Growth & Global Perspective",
+        "students.benefit5.desc": "Living between cultures while following a structured, values-driven German curriculum helps you become independent, resilient, open-minded, and confident. You learn to see the world from multiple perspectives.",
+        "students.benefit6.title": "A Global Network for Life",
+        "students.benefit6.desc": "Join a network of 140+ German international schools and thousands of alumni across continents. Many graduates stay connected through the PASCH initiative and university programs in Germany.",
+        "students.bottomcta": "Ready to explore? Talk to your school →",
+
+        // PARENTS
+        "parents.badge": "FOR PARENTS & FAMILIES",
+        "parents.title": "A smart, future-proof investment",
+        "parents.intro": "Choosing the Abitur path through a German international school gives your child outstanding preparation while protecting your family from the enormous costs of many other international education routes.",
+        "parents.benefit1.title": "Exceptional Long-Term Value",
+        "parents.benefit1.desc": "Public universities in Germany charge little or no tuition — even for international students with an Abitur/DIA. Typical semester fees are only €100–€400 (often including a public transport ticket). Compare that to $30,000–$60,000+ per year elsewhere. Your child can attend world-class universities at a fraction of the cost.",
+        "parents.benefit2.title": "Well-Rounded, High-Quality Education",
+        "parents.benefit2.desc": "The German curriculum emphasizes depth over breadth. Students study languages, sciences, mathematics, history, literature, and the arts at a high level. They graduate with strong character, discipline, and a genuine love of learning.",
+        "parents.benefit3.title": "Strong Community & Cultural Bridge",
+        "parents.benefit3.desc": "German international schools bring together German expat families, local families who value German education, and international families. Your child grows up bilingual and bicultural — comfortable in both Asia and Europe. This is a true cultural bridge that lasts a lifetime.",
+        "parents.benefit4.title": "Preparation for Top Universities",
+        "parents.benefit4.desc": "Graduates regularly gain places at elite institutions: TU Munich, LMU Munich, Heidelberg, ETH Zurich, Imperial College, Oxford, top US and Asian universities. The combination of rigorous academics + international experience is extremely attractive to admissions teams.",
+        "parents.benefit5.title": "Future-Ready Skills for a Changing World",
+        "parents.benefit5.desc": "In today’s Asia, German companies are major investors and employers. A graduate who speaks German, understands German business culture, and holds a respected German qualification has a significant head start in careers across manufacturing, technology, automotive, pharmaceuticals, consulting, and logistics.",
+        "parents.benefit6.title": "Peace of Mind",
+        "parents.benefit6.desc": "You are giving your child one of the world’s most respected secondary qualifications while they remain in a familiar, high-quality school environment close to home. It is education with both excellence and security.",
+        "parents.benefit6.badge": "A DECISION YOU WON’T REGRET",
+
+        // WHY TODAY
+        "why.badge": "RELEVANT NOW MORE THAN EVER",
+        "why.title": "Why the Abitur matters in Asia today",
+        "why.intro": "Asia and Germany are growing closer economically and culturally. The young people who can move confidently between both worlds will have the greatest opportunities.",
+        "why.stat1.number": "140+",
+        "why.stat1.label": "German Schools Abroad worldwide offering the Abitur or DIA",
+        "why.stat1.source": "Source: Zentralstelle für das Auslandsschulwesen (ZfA)",
+        "why.stat2.number": "1,700+",
+        "why.stat2.label": "German companies active in India alone — many more across China, SE Asia & beyond",
+        "why.stat3.number": "€0–400",
+        "why.stat3.label": "Typical semester contribution at German public universities (often includes public transport)",
+        "why.stat3.note": "Huge savings compared to most English-speaking countries",
+        "why.stat4.number": "Direct entry",
+        "why.stat4.label": "to almost all German public universities and strong recognition globally",
+
+        // SCHOOLS
+        "schools.badge": "A GROWING NETWORK ACROSS THE REGION",
+        "schools.title": "German International Schools in Asia",
+        "schools.intro": "Deutsche Auslandsschulen (German Schools Abroad) following German curriculum standards and offering the Abitur or DIA exist in many major Asian cities.",
+        "schools.map": "Find your nearest school on the official ZfA world map",
+        "schools.note": "~140 German schools worldwide supported by the Zentralstelle für das Auslandsschulwesen (ZfA) and part of the PASCH network.",
+        "schools.official.prefix": "Offizielle Schulen der",
+        "schools.official.zfa": "ZfA – Zentralstelle für das Auslandsschulwesen",
+        "logo.zfa": "ZfA - Zentralstelle für das Auslandsschulwesen",
+        "logo.pasch": "PASCH - Schulen: Partner der Zukunft",
+        "logo.kmk": "Kultusministerkonferenz (KMK)",
+        "schools.official.prefix": "Official schools of the",
+        "schools.official.zfa": "ZfA – Zentralstelle für das Auslandsschulwesen",
+        "logo.zfa": "ZfA - Zentralstelle für das Auslandsschulwesen",
+        "logo.pasch": "PASCH - Schulen: Partner der Zukunft",
+        "logo.kmk": "Kultusministerkonferenz (KMK)",
+
+        // FACTS
+        "facts.stat1.number": "140+",
+        "facts.stat1.label": "GERMAN SCHOOLS ABROAD",
+        "facts.stat2.number": "Direct",
+        "facts.stat2.label": "UNIVERSITY ACCESS IN GERMANY",
+        "facts.stat3.number": "Low Cost",
+        "facts.stat3.label": "HIGHER EDUCATION IN GERMANY",
+        "facts.stat4.number": "Global",
+        "facts.stat4.label": "RECOGNITION & OPPORTUNITIES",
+        "facts.disclaimer": "All information is for guidance only. Please verify current details with the ZfA, your school, and official university admissions offices.",
+
+        // TESTIMONIALS
+        "testimonials.badge": "REAL STORIES FROM OUR COMMUNITY",
+        "testimonials.title": "What students and parents say",
+        "testimonials.1.quote": "The DIA gave me direct admission to TU Munich for engineering. Studying in both German and English at school made the transition to university in Germany surprisingly smooth. I now work in Singapore for a German automotive supplier — my language skills were the deciding factor.",
+        "testimonials.1.name": "Liam T., Class of 2022",
+        "testimonials.1.role": "German International School Shanghai → TU Munich → Siemens Asia",
+        "testimonials.2.quote": "As parents we were worried about the cost of university. With the Abitur our daughter was accepted at three excellent German universities with almost no tuition fees. The education she received in Jakarta was outstanding — rigorous but caring. Best decision we ever made.",
+        "testimonials.2.name": "Mr. & Mrs. Patel",
+        "testimonials.2.role": "Parents of Anika (Class of 2023), Deutsche Schule Jakarta",
+        "testimonials.3.quote": "I didn’t realize how valuable German would be. I’m now doing a dual degree in business and German at a top university in Europe while interning with a logistics company that has huge operations in Southeast Asia. The Abitur network helped me find opportunities I never imagined.",
+        "testimonials.3.name": "Sofia K., Grade 12",
+        "testimonials.3.role": "German European School Singapore",
+        "testimonials.note": "These are example stories. We encourage schools to replace them with authentic quotes from your own students and families.",
+
+        // CTA
+        "cta.title": "Ready to take the next step?",
+        "cta.subtitle": "Whether you are a student curious about your options or a parent exploring the best path for your family — we’re here to help.",
+        "cta.talk": "Talk to your school",
+        "cta.download": "Download Information Pack",
+        "cta.contact": "Contact us",
+
+        // CONTACT
+        "contact.badge": "LET'S TALK",
+        "contact.title": "Get in touch",
+        "contact.desc": "Reach out to your school’s Abitur or university guidance counselor, or use the form to ask general questions. We are happy to connect you with the right people.",
+        "form.name": "Your name",
+        "form.email": "Email address",
+        "form.role": "I am a",
+        "form.role.parent": "Parent / Guardian",
+        "form.role.student": "Student (14–19)",
+        "form.role.teacher": "Teacher or Counselor",
+        "form.role.other": "Other",
+        "form.school": "Your school (optional)",
+        "form.school.placeholder": "e.g. Deutsche Schule Shanghai",
+        "form.message": "Your message or question",
+        "form.message.placeholder": "I would like to know more about the DIA and university applications in Germany...",
+        "form.submit": "Send message",
+        "form.success": "Thank you! Your message has been noted. In a real implementation this would be emailed to the school.",
+
+        // FOOTER
+        "footer.tagline": "A clear path to excellent universities and global opportunities — through German international education in Asia.",
+        "footer.resources": "OFFICIAL RESOURCES",
+        "footer.quick": "QUICK LINKS",
+        "footer.disclaimer": "This site is for guidance and inspiration. Always verify current admission requirements, fees, and recognition directly with universities and the ZfA.",
+
+        // IB COMPARISON (new)
+        "ib.badge": "A COMMON QUESTION FROM FAMILIES",
+        "ib.title": "Abitur / DIA compared with the IB Diploma",
+        "ib.intro": "Both the German International Abitur (DIA) and the International Baccalaureate (IB) are world-class qualifications offered at many international schools. Here is a transparent comparison, especially for families connected to Germany or planning university studies there.",
+        "ib.table.aspect": "Aspect",
+        "ib.table.abitur": "German Abitur / DIA",
+        "ib.table.ib": "IB Diploma",
+        "ib.row1.aspect": "University access in Germany",
+        "ib.row1.abitur": "Direct entry with full Hochschulreife. Equivalent to a German Abitur. No Studienkolleg required for almost all programs.",
+        "ib.row1.ib": "Widely recognized but subject to individual university evaluation. Some programs or states may require higher points or additional assessments.",
+        "ib.row2.aspect": "German language & career advantage",
+        "ib.row2.abitur": "Core strength: high-level German + English (often host language too). Huge advantage for German companies and studying/living in Germany, Austria or Switzerland.",
+        "ib.row2.ib": "Excellent English-medium education with a second language. German is offered at some schools but not a central pillar of the qualification.",
+        "ib.row3.aspect": "Cost of higher education in Germany",
+        "ib.row3.abitur": "Public university semester fees are typically only €100–400 (often includes public transport). Abitur/DIA holders are generally treated as domestic students.",
+        "ib.row3.ib": "Base fees are the same, but in Baden-Württemberg non-EU students with IB may pay €1,500 per semester tuition (exceptions apply for some groups).",
+        "ib.row4.aspect": "Curriculum & assessment",
+        "ib.row4.abitur": "Deep specialization in 3–5 subjects with final written and oral Abitur examinations. Strong focus on independent work, structured writing and oral presentation.",
+        "ib.row4.ib": "Six subjects from different groups + core elements (Theory of Knowledge, Extended Essay, Creativity-Activity-Service). More breadth + holistic components.",
+        "ib.row5.aspect": "Best for families who value...",
+        "ib.row5.abitur": "Direct, low-cost access to Germany’s excellent public universities, German-language fluency, and careers with German/European companies in Asia and Europe.",
+        "ib.row5.ib": "Maximum subject flexibility and a very broad, inquiry-based international education for universities worldwide (especially English-speaking).",
+        "ib.note": "Both qualifications open excellent doors. The Abitur/DIA is particularly powerful when Germany, German language skills, or cost-effective high-quality university education in Europe are priorities for your family."
+      },
+
+      de: {
+        // NAV
+        "nav.students": "Für Schülerinnen & Schüler",
+        "nav.parents": "Für Eltern",
+        "nav.why": "Warum Abitur heute",
+        "nav.schools": "Schulen in Asien",
+        "nav.contact": "Kontakt",
+
+        // HERO
+        "hero.badge": "FÜR DEUTSCHE AUSLANDSSCHULEN IN ASIEN",
+        "hero.title": "Dein Tor zur Welt.",
+        "hero.title2": "Das deutsche Abitur.",
+        "hero.subtitle": "Eine moderne, anspruchsvolle Ausbildung, die Türen zu den besten Universitäten weltweit öffnet – und dir einen echten Vorteil in Asien und Europa verschafft.",
+        "hero.cta.students": "Für Schülerinnen & Schüler",
+        "hero.cta.parents": "Für Eltern",
+        "hero.cta.download": "Infos herunterladen",
+        "hero.trust": "Vertraut von Familien an über 140 deutschen Schulen weltweit",
+
+        // WHAT IS
+        "what.badge": "DAS FUNDAMENT DEINER ZUKUNFT",
+        "what.title": "Was ist das deutsche Abitur?",
+        "what.intro": "Das Abitur (offiziell „Zeugnis der Allgemeinen Hochschulreife“) ist der höchste deutsche Schulabschluss. Es berechtigt zum Studium an deutschen Universitäten und wird weltweit anerkannt.",
+        "what.regular.title": "Das klassische Abitur",
+        "what.regular.desc": "In Deutschland erworben. Sehr anspruchsvolle akademische Vorbereitung in Sprachen, Naturwissenschaften, Mathematik, Geschichte und mehr. Direkter Zugang zu allen deutschen Universitäten.",
+        "what.dia.title": "Das Deutsche Internationale Abitur (DIA)",
+        "what.dia.desc": "Speziell für deutsche Auslandsschulen entwickelt. Es verbindet die Stärken des deutschen Lehrplans mit bilingualem Unterricht (Deutsch + Englisch und oft die Landessprache). Du erhältst dieselben Studienberechtigungen in Deutschland plus hervorragende internationale Anerkennung – häufig zusammen mit einem lokalen Abschluss.",
+        "what.dia.badge": "DAS BESTE AUS BEIDEN WELTEN",
+
+        // STUDENTS
+        "students.badge": "FÜR SCHÜLERINNEN UND SCHÜLER 14–19 JAHRE",
+        "students.title": "Warum das Abitur dein Leben verändern wird",
+        "students.talk": "Sprich mit deiner Studienberatung →",
+        "students.benefit1.title": "Weltweiter Hochschulzugang",
+        "students.benefit1.desc": "Dein Abitur oder DIA wird für die direkte Zulassung an deutschen Universitäten (inklusive der weltbesten technischen Universitäten) sowie an hervorragenden Einrichtungen in Europa, Nordamerika, Großbritannien, Australien und Asien anerkannt. In den meisten Fällen ist kein Studienkolleg erforderlich.",
+        "students.benefit2.title": "Karrierevorteil in Asien & Deutschland",
+        "students.benefit2.desc": "Deutschland ist eine der stärksten Volkswirtschaften der Welt. Tausende deutsche Unternehmen (Siemens, BMW, Bosch, SAP, BASF, Volkswagen u.v.m.) expandieren stark in Asien. Bilinguale Absolventinnen und Absolventen mit Abitur/DIA werden für Positionen in Ingenieurwesen, Wirtschaft, Logistik, Technik und Beratung dringend gesucht.",
+        "students.benefit3.title": "Kritisches Denken & Tiefe",
+        "students.benefit3.desc": "Das Abitur ist bekannt für seinen hohen akademischen Anspruch. Du lernst, tief zu analysieren, strukturierte Argumente zu verfassen, eigenständig zu forschen und deine Ideen mündlich zu verteidigen. Diese Fähigkeiten sind an jeder Spitzenuniversität und später in Führungspositionen gefragt.",
+        "students.benefit4.title": "Echte Sprachkompetenz",
+        "students.benefit4.desc": "Du wirst fließend in Deutsch (der Sprache der größten Volkswirtschaft Europas) und Englisch – während du in Asien lebst und lernst. Diese Kombination ist selten und extrem wertvoll für internationale Karrieren und interkulturelle Kompetenz.",
+        "students.benefit5.title": "Persönlichkeitsentwicklung & globaler Blick",
+        "students.benefit5.desc": "Zwischen Kulturen aufzuwachsen und gleichzeitig einem strukturierten, werteorientierten deutschen Curriculum zu folgen, macht dich selbstständig, widerstandsfähig, aufgeschlossen und selbstbewusst. Du lernst, die Welt aus mehreren Perspektiven zu betrachten.",
+        "students.benefit6.title": "Ein globales Netzwerk fürs Leben",
+        "students.benefit6.desc": "Werde Teil eines Netzwerks von über 140 deutschen Auslandsschulen und Tausenden Alumni auf allen Kontinenten. Viele Absolventen bleiben über die PASCH-Initiative und Universitätsprogramme in Deutschland verbunden.",
+        "students.bottomcta": "Bereit, mehr zu erfahren? Sprich mit deiner Schule →",
+
+        // PARENTS
+        "parents.badge": "FÜR ELTERN & FAMILIEN",
+        "parents.title": "Eine kluge, zukunftssichere Investition",
+        "parents.intro": "Der Weg über das Abitur an einer deutschen Auslandsschule gibt deinem Kind eine hervorragende Vorbereitung und schützt deine Familie gleichzeitig vor den enormen Kosten vieler anderer internationaler Bildungswege.",
+        "parents.benefit1.title": "Außergewöhnlicher langfristiger Wert",
+        "parents.benefit1.desc": "Öffentliche Universitäten in Deutschland erheben für Studierende mit Abitur/DIA kaum oder gar keine Studiengebühren. Typische Semesterbeiträge liegen bei nur 100–400 € (oft inklusive Semesterticket für den öffentlichen Nahverkehr). Vergleichen Sie das mit 30.000–60.000+ USD pro Jahr anderswo. Dein Kind kann erstklassige Universitäten zu einem Bruchteil der Kosten besuchen.",
+        "parents.benefit2.title": "Ganzheitliche, hochqualitative Bildung",
+        "parents.benefit2.desc": "Der deutsche Lehrplan legt Wert auf Tiefe statt Breite. Schülerinnen und Schüler lernen Sprachen, Naturwissenschaften, Mathematik, Geschichte, Literatur und Kunst auf hohem Niveau. Sie verlassen die Schule mit starkem Charakter, Disziplin und echter Lernfreude.",
+        "parents.benefit3.title": "Starke Gemeinschaft & kulturelle Brücke",
+        "parents.benefit3.desc": "Deutsche Auslandsschulen vereinen deutsche Expats, lokale Familien, die deutsche Bildung schätzen, und internationale Familien. Dein Kind wächst zweisprachig und bikulturell auf – zu Hause in Asien und in Europa. Eine echte kulturelle Brücke fürs ganze Leben.",
+        "parents.benefit4.title": "Vorbereitung auf Top-Universitäten",
+        "parents.benefit4.desc": "Absolventinnen und Absolventen erhalten regelmäßig Plätze an Elite-Universitäten: TU München, LMU München, Heidelberg, ETH Zürich, Imperial College, Oxford sowie führende Universitäten in den USA und Asien. Die Kombination aus anspruchsvoller Ausbildung und internationaler Erfahrung ist für Zulassungskommissionen sehr attraktiv.",
+        "parents.benefit5.title": "Zukunftsfähige Kompetenzen in einer sich wandelnden Welt",
+        "parents.benefit5.desc": "In Asien von heute sind deutsche Unternehmen wichtige Investoren und Arbeitgeber. Ein Absolvent, der Deutsch spricht, die deutsche Unternehmenskultur versteht und einen angesehenen deutschen Abschluss besitzt, hat einen klaren Vorsprung in Berufen in Industrie, Technologie, Automotive, Pharma, Beratung und Logistik.",
+        "parents.benefit6.title": "Seelenfrieden",
+        "parents.benefit6.desc": "Du gibst deinem Kind einen der weltweit angesehensten Sekundarschulabschlüsse und lässt es gleichzeitig in einer vertrauten, qualitativ hochwertigen Schulumgebung in der Nähe des Zuhauses aufwachsen. Bildung mit Exzellenz und Sicherheit.",
+        "parents.benefit6.badge": "EINE ENTSCHEIDUNG, DIE SICH LOHNT",
+
+        // WHY TODAY
+        "why.badge": "HEUTE RELEVANTER DENN JE",
+        "why.title": "Warum das Abitur in Asien heute zählt",
+        "why.intro": "Asien und Deutschland rücken wirtschaftlich und kulturell immer enger zusammen. Junge Menschen, die sich sicher zwischen beiden Welten bewegen können, werden die größten Chancen haben.",
+        "why.stat1.number": "140+",
+        "why.stat1.label": "Deutsche Auslandsschulen weltweit mit Abitur oder DIA",
+        "why.stat1.source": "Quelle: Zentralstelle für das Auslandsschulwesen (ZfA)",
+        "why.stat2.number": "1.700+",
+        "why.stat2.label": "Deutsche Unternehmen allein in Indien aktiv – viele weitere in China, Südostasien und darüber hinaus",
+        "why.stat3.number": "0–400 €",
+        "why.stat3.label": "Typischer Semesterbeitrag an deutschen öffentlichen Universitäten (oft inkl. Nahverkehrsticket)",
+        "why.stat3.note": "Enorme Ersparnis im Vergleich zu den meisten englischsprachigen Ländern",
+        "why.stat4.number": "Direkter Zugang",
+        "why.stat4.label": "zu fast allen deutschen öffentlichen Universitäten und starke internationale Anerkennung",
+
+        // SCHOOLS
+        "schools.badge": "EIN WACHSENDES NETZWERK IN DER REGION",
+        "schools.title": "Deutsche Auslandsschulen in Asien",
+        "schools.intro": "Deutsche Auslandsschulen, die dem deutschen Lehrplan folgen und das Abitur oder DIA anbieten, gibt es in vielen großen asiatischen Städten.",
+        "schools.map": "Finde deine nächstgelegene Schule auf der offiziellen ZfA-Weltkarte",
+        "schools.note": "Ca. 140 deutsche Schulen weltweit, betreut von der Zentralstelle für das Auslandsschulwesen (ZfA) und Teil des PASCH-Netzwerks.",
+
+        // FACTS
+        "facts.stat1.number": "140+",
+        "facts.stat1.label": "DEUTSCHE AUSLANDSSCHULEN",
+        "facts.stat2.number": "Direkt",
+        "facts.stat2.label": "HOCHSCHULZUGANG IN DEUTSCHLAND",
+        "facts.stat3.number": "Günstig",
+        "facts.stat3.label": "STUDIUM IN DEUTSCHLAND",
+        "facts.stat4.number": "Global",
+        "facts.stat4.label": "ANERKENNUNG & CHANCEN",
+        "facts.disclaimer": "Alle Angaben dienen der Orientierung. Bitte prüfe aktuelle Details direkt bei der ZfA, deiner Schule und den Hochschulzulassungsstellen.",
+
+        // TESTIMONIALS
+        "testimonials.badge": "STIMMEN AUS UNSERER GEMEINSCHAFT",
+        "testimonials.title": "Was Schülerinnen, Schüler und Eltern sagen",
+        "testimonials.1.quote": "Das DIA hat mir den direkten Zugang zum Maschinenbaustudium an der TU München ermöglicht. Der bilinguale Unterricht an der Schule hat den Übergang an die deutsche Universität sehr erleichtert. Heute arbeite ich in Singapur für einen deutschen Automobilzulieferer – meine Sprachkenntnisse waren der entscheidende Faktor.",
+        "testimonials.1.name": "Liam T., Jahrgang 2022",
+        "testimonials.1.role": "German International School Shanghai → TU München → Siemens Asien",
+        "testimonials.2.quote": "Als Eltern haben wir uns Sorgen um die Studienkosten gemacht. Mit dem Abitur wurde unsere Tochter an drei hervorragenden deutschen Universitäten angenommen – mit nahezu keinen Studiengebühren. Die Ausbildung in Jakarta war herausragend: anspruchsvoll und gleichzeitig fürsorglich. Die beste Entscheidung, die wir je getroffen haben.",
+        "testimonials.2.name": "Herr & Frau Patel",
+        "testimonials.2.role": "Eltern von Anika (Jahrgang 2023), Deutsche Schule Jakarta",
+        "testimonials.3.quote": "Ich hatte nicht geahnt, wie wertvoll Deutsch sein würde. Ich studiere jetzt Wirtschaft und Deutsch an einer Top-Universität in Europa und absolviere ein Praktikum bei einem Logistikunternehmen mit großen Aktivitäten in Südostasien. Das Abitur-Netzwerk hat mir Türen geöffnet, die ich nie erwartet hätte.",
+        "testimonials.3.name": "Sofia K., 12. Klasse",
+        "testimonials.3.role": "German European School Singapore",
+        "testimonials.note": "Dies sind Beispiele. Wir empfehlen Schulen, sie durch echte Zitate aus der eigenen Schulgemeinschaft zu ersetzen.",
+
+        // CTA
+        "cta.title": "Bereit für den nächsten Schritt?",
+        "cta.subtitle": "Ob du als Schüler/in mehr über deine Möglichkeiten erfahren möchtest oder als Elternteil den besten Weg für deine Familie suchst – wir helfen gerne weiter.",
+        "cta.talk": "Mit der Schule sprechen",
+        "cta.download": "Informationspaket herunterladen",
+        "cta.contact": "Kontakt aufnehmen",
+
+        // CONTACT
+        "contact.badge": "LASS UNS REDEN",
+        "contact.title": "Kontakt aufnehmen",
+        "contact.desc": "Wende dich an die Abitur- oder Studienberatung deiner Schule oder nutze das Formular für allgemeine Fragen. Wir verbinden dich gerne mit den richtigen Ansprechpartnern.",
+        "form.name": "Dein Name",
+        "form.email": "E-Mail-Adresse",
+        "form.role": "Ich bin",
+        "form.role.parent": "Elternteil / Erziehungsberechtigte*r",
+        "form.role.student": "Schüler/in (14–19)",
+        "form.role.teacher": "Lehrkraft oder Berater/in",
+        "form.role.other": "Sonstiges",
+        "form.school": "Deine Schule (optional)",
+        "form.school.placeholder": "z. B. Deutsche Schule Shanghai",
+        "form.message": "Deine Nachricht oder Frage",
+        "form.message.placeholder": "Ich würde gerne mehr über das DIA und Bewerbungen an deutschen Universitäten erfahren...",
+        "form.submit": "Nachricht senden",
+        "form.success": "Vielen Dank! Deine Nachricht wurde notiert. In einer echten Umsetzung würde sie per E-Mail an die Schule weitergeleitet.",
+
+        // FOOTER
+        "footer.tagline": "Ein klarer Weg zu exzellenten Universitäten und globalen Chancen – durch deutsche internationale Bildung in Asien.",
+        "footer.resources": "OFFIZIELLE QUELLEN",
+        "footer.quick": "SCHNELLZUGRIFF",
+        "footer.disclaimer": "Diese Website dient der Orientierung und Inspiration. Bitte überprüfe Zulassungsbedingungen, Gebühren und Anerkennung immer direkt bei den Universitäten und der ZfA.",
+
+        // IB COMPARISON (new)
+        "ib.badge": "EINE HÄUFIGE FRAGE VON FAMILIEN",
+        "ib.title": "Abitur / DIA im Vergleich zum IB Diploma",
+        "ib.intro": "Sowohl das Deutsche Internationale Abitur (DIA) als auch das International Baccalaureate (IB) sind erstklassige internationale Abschlüsse. Hier ein transparenter Vergleich – besonders relevant für Familien mit Bezug zu Deutschland oder Studienplänen dort.",
+        "ib.table.aspect": "Aspekt",
+        "ib.table.abitur": "Deutsches Abitur / DIA",
+        "ib.table.ib": "IB Diploma",
+        "ib.row1.aspect": "Hochschulzugang in Deutschland",
+        "ib.row1.abitur": "Direkter Zugang mit voller Hochschulreife. Gleichwertig mit einem deutschen Abitur. Für fast alle Studiengänge kein Studienkolleg erforderlich.",
+        "ib.row1.ib": "Weitgehend anerkannt, aber von der jeweiligen Hochschule individuell geprüft. Manche Studiengänge oder Bundesländer verlangen höhere Punktzahlen oder zusätzliche Nachweise.",
+        "ib.row2.aspect": "Deutschkenntnisse & Karrierevorteil",
+        "ib.row2.abitur": "Kernstärke: Hochwertiges Deutsch + Englisch (oft auch Landessprache). Großer Vorteil bei deutschen Unternehmen und für Studium/Leben in Deutschland, Österreich oder der Schweiz.",
+        "ib.row2.ib": "Hervorragende englischsprachige Ausbildung mit einer zweiten Sprache. Deutsch wird an manchen Schulen angeboten, ist aber kein zentraler Bestandteil des Abschlusses.",
+        "ib.row3.aspect": "Kosten für ein Studium in Deutschland",
+        "ib.row3.abitur": "Semesterbeiträge an öffentlichen Universitäten meist nur 100–400 € (oft inkl. Semesterticket). Abitur/DIA-Absolventen werden in der Regel wie Inländer behandelt.",
+        "ib.row3.ib": "Die Grundbeiträge sind gleich, aber in Baden-Württemberg können Nicht-EU-Studierende mit IB bis zu 1.500 € Studiengebühren pro Semester zahlen (Ausnahmen möglich).",
+        "ib.row4.aspect": "Lehrplan & Prüfungen",
+        "ib.row4.abitur": "Tiefe Spezialisierung in 3–5 Leistungsfächern mit schriftlichen und mündlichen Abiturprüfungen. Starker Fokus auf selbstständiges Arbeiten, strukturiertes Schreiben und mündliche Präsentation.",
+        "ib.row4.ib": "Sechs Fächer aus verschiedenen Gruppen plus Kernbereich (Theory of Knowledge, Extended Essay, CAS). Mehr Breite und ganzheitliche Elemente.",
+        "ib.row5.aspect": "Besonders geeignet für Familien, die ...",
+        "ib.row5.abitur": "Direkten, kostengünstigen Zugang zu Deutschlands exzellenten öffentlichen Universitäten, Deutschkenntnisse auf hohem Niveau und Karrieren bei deutschen/europäischen Unternehmen in Asien und Europa schätzen.",
+        "ib.row5.ib": "Maximale Wahlfreiheit bei den Fächern und eine sehr breite, forschungsorientierte internationale Ausbildung für Universitäten weltweit (vor allem englischsprachige) wünschen.",
+        "ib.note": "Beide Abschlüsse öffnen hervorragende Türen. Das Abitur/DIA ist besonders stark, wenn Deutschland, Deutschkenntnisse oder ein kostengünstiges, qualitativ hochwertiges Studium in Europa für Ihre Familie Priorität haben."
+      },
+
+      ko: {
+        // NAV
+        "nav.students": "학생 대상",
+        "nav.parents": "학부모 대상",
+        "nav.why": "오늘날 아비투르의 의미",
+        "nav.schools": "아시아 내 독일 학교",
+        "nav.contact": "문의하기",
+
+        // HERO
+        "hero.badge": "아시아 독일 국제학교를 위한",
+        "hero.title": "세상을 향한 관문.",
+        "hero.title2": "독일 아비투르.",
+        "hero.subtitle": "전 세계 최고 대학으로 가는 문을 열어주는 현대적이고 엄격한 교육 — 아시아와 유럽에서 강력한 경쟁력을 제공합니다.",
+        "hero.cta.students": "학생 대상",
+        "hero.cta.parents": "학부모 대상",
+        "hero.cta.download": "자료 다운로드",
+        "hero.trust": "전 세계 140개 이상 독일 학교 가족들의 신뢰",
+
+        // WHAT IS
+        "what.badge": "미래의 기초",
+        "what.title": "독일 아비투르란 무엇인가?",
+        "what.intro": "아비투르(정식 명칭: 「일반 대학 입학 자격 증명서」)는 독일 최고의 고등학교 졸업 자격증입니다. 독일 대학 진학과 전 세계 대학에서 인정받습니다.",
+        "what.regular.title": "일반 아비투르",
+        "what.regular.desc": "독일에서 이수. 언어, 자연과학, 수학, 역사 등 전반에 걸친 매우 엄격한 학업 준비. 모든 독일 대학에 직접 입학 가능.",
+        "what.dia.title": "독일 국제 아비투르 (DIA)",
+        "what.dia.desc": "해외 독일학교를 위해 특별히 설계되었습니다. 독일 교육과정의 강점과 이중 언어 교육(독일어 + 영어, 종종 현지 언어)을 결합합니다. 독일 내 동일한 대학 입학 자격과 우수한 국제 인정을 받으며, 종종 현지 고등학교 졸업장과 함께 수여됩니다.",
+        "what.dia.badge": "두 세계의 최고",
+
+        // STUDENTS
+        "students.badge": "14~19세 학생 대상",
+        "students.title": "아비투르가 인생을 바꾸는 이유",
+        "students.talk": "학교 상담사와 상담하기 →",
+        "students.benefit1.title": "전 세계 대학 진학",
+        "students.benefit1.desc": "아비투르 또는 DIA는 독일 대학(세계 최고 수준의 공과대학 포함)뿐만 아니라 유럽, 북미, 영국, 호주, 아시아의 우수 대학에 직접 입학할 수 있는 자격을 인정받습니다. 대부분의 경우 예비대학 과정이 필요 없습니다.",
+        "students.benefit2.title": "아시아와 독일에서의 경력 우위",
+        "students.benefit2.desc": "독일은 세계에서 가장 강력한 경제 대국 중 하나입니다. 수천 개의 독일 기업(지멘스, BMW, 보쉬, SAP, 바스프, 폭스바겐 등)이 아시아 전역에서 빠르게 확장하고 있습니다. 아비투르/DIA를 가진 이중 언어 졸업생은 엔지니어링, 비즈니스, 물류, 기술, 컨설팅 분야에서 높은 수요를 가지고 있습니다.",
+        "students.benefit3.title": "비판적 사고와 깊이",
+        "students.benefit3.desc": "아비투르는 학문적 엄격함으로 유명합니다. 깊이 분석하고, 구조화된 논증을 작성하며, 독립적인 연구를 수행하고, 구두로 자신의 생각을 방어하는 방법을 배웁니다. 이러한 능력은 모든 명문 대학과 이후 리더십 역할에서 높이 평가됩니다.",
+        "students.benefit4.title": "진정한 언어 능력",
+        "students.benefit4.desc": "아시아에서 생활하고 공부하면서 유럽 최대 경제 대국인 독일어와 영어에 능통해집니다. 이 조합은 국제 경력과 문화적 유창성에 매우 드물고 가치 있는 자산입니다.",
+        "students.benefit5.title": "개인적 성장과 글로벌 관점",
+        "students.benefit5.desc": "문화 사이에서 생활하면서 구조화되고 가치 중심적인 독일 교육과정을 따르는 것은 독립적이고, 회복력 있으며, 개방적이고 자신감 있는 사람으로 성장하게 합니다. 여러 관점에서 세상을 보는 법을 배웁니다.",
+        "students.benefit6.title": "평생 이어지는 글로벌 네트워크",
+        "students.benefit6.desc": "140개 이상의 독일 국제학교와 전 대륙에 걸친 수천 명의 동문 네트워크에 참여하세요. 많은 졸업생들이 PASCH 이니셔티브와 독일 대학 프로그램을 통해 계속 연결되어 있습니다.",
+        "students.bottomcta": "탐색할 준비가 되셨나요? 학교와 상담하세요 →",
+
+        // PARENTS
+        "parents.badge": "학부모 및 가족 대상",
+        "parents.title": "현명하고 미래 지향적인 투자",
+        "parents.intro": "독일 국제학교를 통한 아비투르 경로는 자녀에게 뛰어난 준비를 제공하면서도 다른 많은 국제 교육 경로의 막대한 비용으로부터 가족을 보호합니다.",
+        "parents.benefit1.title": "탁월한 장기적 가치",
+        "parents.benefit1.desc": "독일 공립대학은 아비투르/DIA를 가진 국제 학생에게도 거의 또는 전혀 등록금을 부과하지 않습니다. 일반 학기 비용은 100~400유로(대중교통 티켓 포함인 경우가 많음)입니다. 다른 나라의 연 3만~6만 달러와 비교해보세요. 자녀는 세계 최고 수준의 대학을 훨씬 적은 비용으로 다닐 수 있습니다.",
+        "parents.benefit2.title": "균형 잡힌 고품질 교육",
+        "parents.benefit2.desc": "독일 교육과정은 폭보다 깊이를 강조합니다. 학생들은 언어, 자연과학, 수학, 역사, 문학, 예술을 높은 수준으로 공부합니다. 강한 인성과 규율, 진정한 배움의 즐거움을 가지고 졸업합니다.",
+        "parents.benefit3.title": "강력한 공동체와 문화적 다리",
+        "parents.benefit3.desc": "독일 국제학교는 독일인 주재원 가족, 독일 교육을 중요하게 여기는 현지 가족, 국제 가족이 함께합니다. 자녀는 아시아와 유럽 모두에서 편안한 이중 언어, 이중 문화인으로 성장합니다. 평생 이어지는 진정한 문화적 다리입니다.",
+        "parents.benefit4.title": "최고 대학 준비",
+        "parents.benefit4.desc": "졸업생들은 정기적으로 명문 대학에 진학합니다: TU 뮌헨, LMU 뮌헨, 하이델베르크, ETH 취리히, 임페리얼 칼리지, 옥스퍼드, 미국 및 아시아 최고 대학. 엄격한 학업과 국제 경험의 조합은 입학 사정관들에게 매우 매력적입니다.",
+        "parents.benefit5.title": "변화하는 세계를 위한 미래 지향적 역량",
+        "parents.benefit5.desc": "오늘날 아시아에서 독일 기업은 주요 투자자이자 고용주입니다. 독일어를 구사하고 독일 비즈니스 문화를 이해하며 존경받는 독일 자격증을 가진 졸업생은 제조, 기술, 자동차, 제약, 컨설팅, 물류 분야에서 명확한 우위를 가집니다.",
+        "parents.benefit6.title": "마음의 평화",
+        "parents.benefit6.desc": "자녀에게 세계에서 가장 존경받는 중등 교육 자격증 중 하나를 주면서도 집에서 가까운 익숙하고 고품질의 학교 환경에서 자라게 합니다. 우수성과 안정성을 겸비한 교육입니다.",
+        "parents.benefit6.badge": "후회하지 않을 결정",
+
+        // WHY TODAY
+        "why.badge": "지금 그 어느 때보다 중요",
+        "why.title": "아시아에서 아비투르가 중요한 이유",
+        "why.intro": "아시아와 독일은 경제적·문화적으로 점점 더 가까워지고 있습니다. 두 세계 사이를 자신 있게 오갈 수 있는 젊은이들이 가장 큰 기회를 가질 것입니다.",
+        "why.stat1.number": "140+",
+        "why.stat1.label": "아비투르 또는 DIA를 제공하는 전 세계 독일 해외 학교",
+        "why.stat1.source": "출처: 해외학교 업무 중앙처(ZfA)",
+        "why.stat2.number": "1,700+",
+        "why.stat2.label": "인도에서만 활동하는 독일 기업 — 중국, 동남아시아 등에 더 많음",
+        "why.stat3.number": "€0–400",
+        "why.stat3.label": "독일 공립대학의 일반적인 학기 비용(대중교통 포함인 경우가 많음)",
+        "why.stat3.note": "대부분의 영어권 국가에 비해 엄청난 절감 효과",
+        "why.stat4.number": "직접 입학",
+        "why.stat4.label": "거의 모든 독일 공립대학과 강력한 국제 인정",
+
+        // SCHOOLS
+        "schools.badge": "지역 전역에서 성장하는 네트워크",
+        "schools.title": "아시아 내 독일 국제학교",
+        "schools.intro": "독일 교육과정을 따르고 아비투르 또는 DIA를 제공하는 독일 해외학교(Deutsche Auslandsschulen)는 아시아의 많은 주요 도시에 있습니다.",
+        "schools.map": "공식 ZfA 세계 지도에서 가장 가까운 학교 찾기",
+        "schools.note": "ZfA(해외학교 업무 중앙처)가 지원하는 전 세계 약 140개 독일 학교 및 PASCH 네트워크의 일부.",
+        "schools.official.prefix": "공식 학교",
+        "schools.official.zfa": "ZfA – 해외학교 업무 중앙처",
+        "logo.zfa": "ZfA - 해외학교 업무 중앙처",
+        "logo.pasch": "PASCH - 미래의 파트너 학교",
+        "logo.kmk": "문화교육부 장관 회의(KMK)",
+
+        // FACTS
+        "facts.stat1.number": "140+",
+        "facts.stat1.label": "독일 해외학교",
+        "facts.stat2.number": "직접",
+        "facts.stat2.label": "독일 대학 입학 자격",
+        "facts.stat3.number": "저비용",
+        "facts.stat3.label": "독일 고등교육",
+        "facts.stat4.number": "글로벌",
+        "facts.stat4.label": "인정 및 기회",
+        "facts.disclaimer": "모든 정보는 참고용입니다. 최신 세부 사항은 ZfA, 학교, 공식 대학 입학처에 직접 확인하시기 바랍니다.",
+
+        // TESTIMONIALS
+        "testimonials.badge": "우리 공동체의 실제 이야기",
+        "testimonials.title": "학생과 학부모의 이야기",
+        "testimonials.1.quote": "DIA 덕분에 뮌헨 공과대학 기계공학과에 직접 입학할 수 있었습니다. 학교에서의 독일어와 영어 이중 언어 교육이 독일 대학으로의 전환을 매우 수월하게 만들었습니다. 지금은 싱가포르에서 독일 자동차 부품 공급업체에서 일하고 있습니다 — 제 언어 능력이 결정적인 요소였습니다.",
+        "testimonials.1.name": "Liam T., 2022년 졸업",
+        "testimonials.1.role": "상하이 독일 국제학교 → 뮌헨 공과대학 → 지멘스 아시아",
+        "testimonials.2.quote": "부모로서 우리는 대학 비용을 걱정했습니다. 아비투르 덕분에 딸이 등록금이 거의 없는 세 개의 우수한 독일 대학에 합격했습니다. 자카르타에서 받은 교육은 탁월했습니다 — 엄격하면서도 배려 깊었습니다. 우리가 내린 최고의 결정이었습니다.",
+        "testimonials.2.name": "파텔 부부",
+        "testimonials.2.role": "Anika (2023년 졸업) 부모, 자카르타 독일학교",
+        "testimonials.3.quote": "독일어가 얼마나 가치 있는지 몰랐습니다. 지금은 유럽의 명문 대학에서 경영학과 독일어를 복수 전공하며 동남아시아에 대규모 사업을 가진 물류 회사에서 인턴십을 하고 있습니다. 아비투르 네트워크가 제가 상상하지 못했던 기회를 찾도록 도와주었습니다.",
+        "testimonials.3.name": "Sofia K., 12학년",
+        "testimonials.3.role": "싱가포르 독일 유럽학교",
+        "testimonials.note": "이것은 예시 이야기입니다. 각 학교는 자체 학생과 가족의 실제 인용문으로 교체하시기 바랍니다.",
+
+        // CTA
+        "cta.title": "다음 단계로 나아갈 준비가 되셨나요?",
+        "cta.subtitle": "학생으로서 옵션을 알아보고 싶거나, 학부모로서 가족을 위한 최선의 길을 탐색하고 계시다면 — 저희가 도와드리겠습니다.",
+        "cta.talk": "학교와 상담하기",
+        "cta.download": "정보 자료 다운로드",
+        "cta.contact": "문의하기",
+
+        // CONTACT
+        "contact.badge": "연락하기",
+        "contact.title": "문의하기",
+        "contact.desc": "학교의 아비투르 또는 대학 진학 상담사에게 연락하시거나, 일반적인 질문을 위해 양식을 사용하세요. 적합한 분들과 연결해 드리겠습니다.",
+        "form.name": "성함",
+        "form.email": "이메일 주소",
+        "form.role": "저는",
+        "form.role.parent": "학부모 / 보호자",
+        "form.role.student": "학생 (14~19세)",
+        "form.role.teacher": "교사 또는 상담사",
+        "form.role.other": "기타",
+        "form.school": "재학 학교 (선택)",
+        "form.school.placeholder": "예: 상하이 독일학교",
+        "form.message": "메시지 또는 질문",
+        "form.message.placeholder": "DIA와 독일 대학 지원에 대해 더 알고 싶습니다...",
+        "form.submit": "메시지 보내기",
+        "form.success": "감사합니다! 메시지가 기록되었습니다. 실제 구현에서는 학교로 이메일이 전송될 것입니다.",
+
+        // FOOTER
+        "footer.tagline": "독일 국제 교육을 통해 아시아에서 세계 최고의 대학과 글로벌 기회로 가는 명확한 길.",
+        "footer.resources": "공식 자료",
+        "footer.quick": "빠른 링크",
+        "footer.disclaimer": "이 사이트는 안내와 영감을 위한 것입니다. 최신 입학 요건, 비용, 인정 여부는 대학과 ZfA에 직접 확인하시기 바랍니다.",
+
+        // IB COMPARISON
+        "ib.badge": "가족들이 자주 묻는 질문",
+        "ib.title": "아비투르/DIA와 IB 디플로마 비교",
+        "ib.intro": "독일 국제 아비투르(DIA)와 국제 바칼로레아(IB)는 많은 국제학교에서 제공하는 세계적 수준의 자격증입니다. 특히 독일과 연계된 가족이나 독일 대학 진학을 계획하는 분들을 위한 투명한 비교입니다.",
+        "ib.table.aspect": "항목",
+        "ib.table.abitur": "독일 아비투르 / DIA",
+        "ib.table.ib": "IB 디플로마",
+        "ib.row1.aspect": "독일 대학 입학",
+        "ib.row1.abitur": "완전한 Hochschulreife로 직접 입학. 독일 아비투르와 동등. 대부분의 프로그램에서 Studienkolleg 불필요.",
+        "ib.row1.ib": "폭넓게 인정되지만 개별 대학 평가에 따름. 일부 프로그램이나 주에서는 높은 점수나 추가 평가 필요.",
+        "ib.row2.aspect": "독일어 능력 및 경력 우위",
+        "ib.row2.abitur": "핵심 강점: 고급 독일어 + 영어(종종 현지 언어). 독일 기업과 독일·오스트리아·스위스에서의 유학/생활에 큰 이점.",
+        "ib.row2.ib": "우수한 영어 중심 교육 + 제2외국어. 일부 학교에서 독일어를 제공하지만 자격증의 중심은 아님.",
+        "ib.row3.aspect": "독일 고등교육 비용",
+        "ib.row3.abitur": "공립대학 학기 비용은 보통 100~400유로(대중교통 포함인 경우 많음). 아비투르/DIA 소지자는 일반적으로 내국인 대우.",
+        "ib.row3.ib": "기본 비용은 같지만, 바덴뷔르템베르크 주에서는 비EU IB 학생이 학기당 1,500유로 등록금 부과(일부 예외 있음).",
+        "ib.row4.aspect": "교육과정 및 평가",
+        "ib.row4.abitur": "3~5개 심화 과목에 대한 깊이 있는 전문화 + 최종 필기·구두 아비투르 시험. 독립적 작업, 구조화된 글쓰기, 구두 발표에 중점.",
+        "ib.row4.ib": "다양한 그룹의 6개 과목 + 핵심 요소(Theory of Knowledge, Extended Essay, CAS). 더 넓은 범위와 전인적 요소.",
+        "ib.row5.aspect": "특히 적합한 가족",
+        "ib.row5.abitur": "독일의 우수한 공립대학에 저비용으로 직접 접근, 높은 수준의 독일어 능력, 아시아와 유럽의 독일/유럽 기업 경력을 중요시하는 가족.",
+        "ib.row5.ib": "최대 과목 선택의 유연성과 전 세계(특히 영어권) 대학을 위한 폭넓고 탐구 중심의 국제 교육을 원하는 가족.",
+        "ib.note": "두 자격증 모두 훌륭한 기회를 열어줍니다. 아비투르/DIA는 독일, 독일어 능력, 또는 유럽에서의 비용 효율적 고품질 대학 교육이 가족의 우선순위일 때 특히 강력합니다."
+      }
+    };
+
+    let currentLang = 'en';
+
+    // Set language and update all elements with data-i18n
+    function setLanguage(lang) {
+      currentLang = lang;
+      
+      // Update all elements with data-i18n attribute
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const text = translations[lang][key];
+        
+        if (text !== undefined) {
+          // Use innerHTML only for keys we know contain no user content / are safe
+          // Most are plain text; a few hero titles use simple text.
+          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            // Don't overwrite form fields content
+            return;
+          }
+          el.innerHTML = text;
+        }
+      });
+
+      // Support bilingual alt text on images (for logos etc.)
+      document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+        const key = el.getAttribute('data-i18n-alt');
+        const text = translations[lang][key];
+        if (text !== undefined && el.tagName === 'IMG') {
+          el.setAttribute('alt', text);
+        }
+      });
+
+      // Update language buttons active state
+      document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+      document.getElementById('lang-de').classList.toggle('active', lang === 'de');
+      const koBtn = document.getElementById('lang-ko');
+      if (koBtn) koBtn.classList.toggle('active', lang === 'ko');
+      
+      // Also update mobile buttons if present
+      const mobileEn = document.getElementById('mobile-lang-en');
+      const mobileDe = document.getElementById('mobile-lang-de');
+      const mobileKo = document.getElementById('mobile-lang-ko');
+      if (mobileEn) mobileEn.classList.toggle('!bg-[#1e3a8a] !text-white', lang === 'en');
+      if (mobileDe) mobileDe.classList.toggle('!bg-[#1e3a8a] !text-white', lang === 'de');
+      if (mobileKo) mobileKo.classList.toggle('!bg-[#1e3a8a] !text-white', lang === 'ko');
+
+      // Persist choice
+      localStorage.setItem('abiturLang', lang);
+
+      // Update html lang attribute
+      document.documentElement.lang = lang;
+    }
+
+    function initLanguage() {
+      // Try saved preference first
+      const saved = localStorage.getItem('abiturLang');
+      
+      // Then try browser language (support Korean too)
+      let browserPref = 'en';
+      const navLang = navigator.language || '';
+      if (navLang.startsWith('de')) browserPref = 'de';
+      else if (navLang.startsWith('ko')) browserPref = 'ko';
+      
+      let preferred = saved || browserPref;
+      
+      // Set it
+      setLanguage(preferred);
+      
+      // Make sure buttons reflect state even on first load
+      const enBtn = document.getElementById('lang-en');
+      const deBtn = document.getElementById('lang-de');
+      const koBtn = document.getElementById('lang-ko');
+      if (enBtn) enBtn.classList.toggle('active', preferred === 'en');
+      if (deBtn) deBtn.classList.toggle('active', preferred === 'de');
+      if (koBtn) koBtn.classList.toggle('active', preferred === 'ko');
+    }
+
+    // Mobile menu helpers
+    function initMobileMenu() {
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      
+      if (!btn || !menu) return;
+
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        // change icon to X when open (simple)
+        if (!menu.classList.contains('hidden')) {
+          btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6h12v12" /></svg>`;
+        } else {
+          btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>`;
+        }
+      });
+
+      // Close menu when clicking a link inside
+      menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.add('hidden');
+          btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>`;
+        });
+      });
+    }
+
+    function closeMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const btn = document.getElementById('mobile-menu-btn');
+      if (menu) menu.classList.add('hidden');
+      if (btn) btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>`;
+    }
+
+    // Download brochure - creates a simple client-side text file
+    // In a real project you would link to a hosted PDF instead.
+    function downloadBrochure() {
+      const lang = currentLang;
+      const title = lang === 'de' ? 'Abitur-Informationen' : 'Abitur Information Brochure';
+      
+      const content = lang === 'de' 
+        ? `Abitur & DIA – Deutsche Internationale Bildung in Asien\n\n` +
+          `Das Abitur (bzw. das Deutsche Internationale Abitur DIA) ist der höchste deutsche Schulabschluss und berechtigt zum Studium an deutschen und internationalen Universitäten.\n\n` +
+          `Vorteile für Schülerinnen und Schüler:\n` +
+          `• Direkter Zugang zu deutschen Universitäten (oft gebührenfrei oder sehr günstig)\n` +
+          `• Starke Anerkennung weltweit\n` +
+          `• Bilinguale Kompetenz (Deutsch + Englisch)\n` +
+          `• Exzellente Vorbereitung auf Karrieren bei deutschen Unternehmen in Asien und Europa\n\n` +
+          `Vorteile für Eltern:\n` +
+          `• Sehr gute Bildung zu deutlich geringeren Studienkosten\n` +
+          `• Starke Gemeinschaft an deutschen Auslandsschulen\n` +
+          `• Kulturelle Brücke zwischen Asien und Deutschland/Europa\n\n` +
+          `Offizielle Informationen: https://www.auslandsschulwesen.de/\n` +
+          `Diese Datei ist ein Platzhalter. Ersetzen Sie sie durch eine echte Broschüre Ihrer Schule.`
+        : `Abitur & DIA – German International Education in Asia\n\n` +
+          `The Abitur (including the German International Abitur DIA) is Germany’s highest school-leaving qualification and grants direct access to universities in Germany and worldwide.\n\n` +
+          `Benefits for students:\n` +
+          `• Direct university entrance in Germany (often tuition-free or very low cost)\n` +
+          `• Strong international recognition\n` +
+          `• True bilingual skills (German + English)\n` +
+          `• Excellent preparation for careers with German companies in Asia and Europe\n\n` +
+          `Benefits for parents:\n` +
+          `• Outstanding education at far lower long-term university costs\n` +
+          `• Supportive community at German international schools\n` +
+          `• A lasting cultural bridge between Asia and Germany/Europe\n\n` +
+          `Official information: https://www.auslandsschulwesen.de/\n` +
+          `This is a placeholder file. Replace it with a real school brochure PDF.`;
+
+      const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = lang === 'de' ? 'Abitur-Informationen.txt' : 'Abitur-Information-Brochure.txt';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    // Contact form handler (demo only - shows success message)
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      
+      const successEl = document.getElementById('form-success');
+      
+      // In production you would send this to a backend or service like Formspree
+      // For now we just show a friendly message and optionally reset
+      successEl.classList.remove('hidden');
+      successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Optional: clear form after a moment
+      setTimeout(() => {
+        e.target.reset();
+      }, 1600);
+
+      // Hide message again after some time (so user can submit again if wanted)
+      setTimeout(() => {
+        if (successEl) successEl.classList.add('hidden');
+      }, 6500);
+    }
+
+    // Small helper: set current year in footer
+    function setFooterYear() {
+      const yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    }
+
+    // Keyboard support: press "E" or "D" to switch language quickly (nice for demo)
+    function initKeyboardShortcuts() {
+      document.addEventListener('keydown', (e) => {
+        if (e.key.toLowerCase() === 'e' && document.activeElement.tagName === 'BODY') {
+          setLanguage('en');
+        }
+        if (e.key.toLowerCase() === 'd' && document.activeElement.tagName === 'BODY') {
+          setLanguage('de');
+        }
+      });
+    }
+
+    // Initialize everything
+    function init() {
+      initTailwind();
+      initMobileMenu();
+      initLanguage();
+      setFooterYear();
+      initKeyboardShortcuts();
+
+      // Make sure the mobile language buttons also work (they are created in HTML)
+      // (the onclick attributes already call setLanguage + closeMobileMenu)
+
+      // Optional: subtle active section highlighting on scroll could be added later
+      console.log('%c[Abitur Website] Bilingual site initialized. Language system ready.', 'color:#64748b');
+    }
+
+    // Boot the app
+    window.onload = init;
+
+    // Expose a couple of helpful functions in case you want to test in console
+    window.setSiteLanguage = setLanguage;
+    window.downloadAbiturBrochure = downloadBrochure;
+  </script>
+</body>
+</html>

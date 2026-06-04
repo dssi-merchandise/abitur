@@ -1,0 +1,29 @@
+ABITUR & DIA – PLACEHOLDER BROCHURE
+======================================
+
+This is a placeholder file created for the demo website.
+
+In a real project you would replace this with a professionally designed PDF brochure (2–8 pages) containing:
+- More detailed information about the Abitur and DIA
+- Curriculum overview
+- University placement statistics from your school
+- Testimonials from real students/parents
+- Practical next steps and contact information for your specific school
+
+Suggested filename when replacing: Abitur-DIA-Information-2026.pdf or similar.
+
+You can generate a real PDF later using tools like:
+- Canva (easy templates)
+- Microsoft Word → Export PDF
+- Adobe InDesign (for professional print)
+
+The "Download Information" buttons on the website currently trigger a simple text download using JavaScript so the functionality works immediately without hosting files.
+
+To link to a real PDF later, simply change the onclick="downloadBrochure()" handlers in index.html to regular <a href="assets/downloads/Your-Real-Brochure.pdf" download> links.
+
+Official sources to reference in your brochure:
+- https://www.auslandsschulwesen.de/   (ZfA)
+- https://www.pasch-net.de/
+- https://anabin.kmk.org
+
+Thank you for supporting German international education in Asia!
